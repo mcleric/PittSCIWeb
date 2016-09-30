@@ -2,14 +2,10 @@
                                    BODY
 ********************************************************************************/
 
-html, body {
-  height: 100%;
-  width: 100%;
-  background-color: #FFF;
-}
-
 body {
-  color: #FFF;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
 }
 
 /* Toggle this code to outline all elements, to help with alignments */
@@ -22,31 +18,82 @@ body {
                               TOP NAVIGATION
 ********************************************************************************/
 
+#navbar-top {
+  /*background-color: rgb(18, 30, 70);*/
+  /*background: linear-gradient(#121E46 70%, white);*/
+  /*background: linear-gradient(to bottom, rgba(53,66,107,1) 0%, rgba(53,66,107,1) 0%, rgba(18,30,70,1) 36%, rgba(9,18,51,1) 100%);*/
+  background: linear-gradient(to bottom, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
+  /*border-bottom: solid 1px #000;*/
+  height: 3.5rem;
+}
 
+.seal {
+  width: 2.4rem;
+  height: 2.4rem;
+}
 
-/*******************************************************************************
-                              BACKGROUND IMAGE
-********************************************************************************/
+.nav-link {
+  color: #FFF !important;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200 !important;
+  margin-top: 0.2rem;
+}
 
-.jumbotron {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  height: 60vh;
-  /*background: transparent url('../img/somefilename.jpeg') no-repeat center;
-  background-size: cover;*/
+.navbar-logo {
+  padding-top: 0.1rem;
+}
+
+.navbar-brand {
+  color: #FFF !important;
+  font-family: 'Slabo 27px', serif;
+  text-transform: none !important;
+  font-size: 1.5rem;
+  padding-left: 0.75rem;
+  padding-top: 0.25rem;
 }
 
 /*******************************************************************************
                             HOMEPAGE (INDEX.HTML)
 ********************************************************************************/
 
-#hello-world {
-  font-size: 5em;
-  text-align: center;
-  width: 100%;
-  color: #333;
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
 }
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-indicators {
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: auto;
+  left: auto;
+  width: 1rem;
+  margin-left: 0;
+}
+
+.carousel-indicators > li {
+  margin-bottom: .25rem;
+}
+
 
 /*******************************************************************************
                             HOMEPAGE @MEDIA 480PX
@@ -63,6 +110,26 @@ body {
                                BOTTOM NAVIGATION
 ********************************************************************************/
 
+#navbar-bottom {
+  /*background-color: rgb(202, 203, 154);*/
+  /*background: linear-gradient(to bottom, rgba(232,232,208,1) 0%, rgba(202,203,154,1) 35%, rgba(115,115,60,1) 100%);*/
+  background: linear-gradient(to top, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
+  /*border-top: solid 1px #000;*/
+  height: 3.5rem;
+}
+
+#navbar-bottom a {
+  color: #FFF !important;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+#navbar-social {
+  font-size: 1.5rem;
+  margin-top: -0.4rem;
+}
 
 @media screen and (max-width: 480px) {
 
