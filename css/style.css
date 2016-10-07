@@ -351,6 +351,7 @@ footer .row {
 
 #tweet-heading {
   text-align: justify;
+  font-size: 1.5rem;
   margin-left: -2rem;
   margin-top: 1rem;
 }
@@ -365,6 +366,7 @@ footer .row {
 }
 
 #contact-heading {
+  font-size: 1.5rem;
   margin-top: 1rem;
 }
 
