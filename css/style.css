@@ -4,10 +4,11 @@
 
 body {
   padding-top: 3rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
   color: #5a5a5a;
-  background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 100%);}
-
+  /*background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(239,239,239,1) 0%, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 100%);}*/
+  background: radial-gradient(ellipse at center, rgba(254,254,254,1) 0%, rgba(219,219,219,1) 85%, rgba(226,226,226,1) 100%);
+}
 /* Toggle this code to outline all elements, to help with alignments */
 
 /*body * {
@@ -60,7 +61,7 @@ body {
 .carousel {
   margin-bottom: 4rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom: solid 4px #FFF;
+  border-bottom: solid 1px #333;
 }
 
 .carousel-caption {
@@ -94,8 +95,11 @@ body {
   margin-bottom: .25rem;
 }
 
+/*******************************************************************************
+                              MARKETING SECTION
+********************************************************************************/
+
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -115,7 +119,7 @@ body {
 }
 
 .marketing .btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .img-circle {
@@ -127,6 +131,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*******************************************************************************
+                                NEWS SECTION
+********************************************************************************/
+
 .featurette-divider {
   margin: 5rem 0;
 }
@@ -136,42 +144,95 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
   margin-bottom: 2rem;
-  margin-left: 2.5rem;
   text-transform: uppercase;
   text-align: justify;
 }
 
-.news-section {
-  background-color: #EEE;
-  padding: 1rem;
-  height: 27rem;
-  text-align: justify;
-  margin-top: -7rem;
-  margin-bottom: -5rem;
-  border-top: solid 0.5px #AAA;
-  border-bottom: solid 0.5px #AAA;
+.news {
+
 }
 
-.news-section h2 {
-  margin-top: 2rem;
+#headline-news-heading {
+  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 
-.news li {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+#recent-news-heading {
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
 }
 
-.sennott {
-  margin-left: 4rem;
-  margin-top: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.left-news h2 {
+  margin-left: 3rem;
+}
+
+.left-news h5 {
+  margin-left: 3rem;
+}
+
+.left-news img {
+  margin-left: 3rem;
+  height: 12rem;
+  width: 28rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
   border: solid 4px #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.left-news > div {
+  margin-left: 3rem;
+}
+
+.left-news p {
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+.news-info {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  padding-right: 2rem;
+}
+
+.news-details {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#headline-news-image {
+  height: 20rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border: solid 2px #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#news-btn {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+/*******************************************************************************
+                                EVENTS SECTION
+********************************************************************************/
+
+#featured-event-heading {
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+#upcoming-event-heading {
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
 }
 
 .featured-event {
-  height: 11.5rem;
+  height: 11rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  border: solid 2px #333;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -229,7 +290,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 1rem;
   height: 4rem;
-  border: solid 1px #DDD;
+  border: solid 1px #777;
 }
 
 .calendar-top {
@@ -260,13 +321,18 @@ body {
   width: 20rem;
 }
 
+/*******************************************************************************
+                                FOOTER SECTION
+********************************************************************************/
+
 footer {
-  background-color: #DDD;
+  background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(219,219,219,1) 61%, rgba(219,219,219,1) 71%, rgba(226,226,226,1) 100%);
   padding: 1rem;
   height: 21rem;
   text-align: center;
-  border-top: solid 0.5px #CCC;
-  margin-top: -5rem;
+  font-size: 0.9rem;
+  border-top: solid 1px #333;
+  margin-top: -6rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -283,9 +349,10 @@ footer .row {
   padding-top: 1rem;
 }
 
-#late {
+#tweet-heading {
   text-align: justify;
-  margin-left: -0.5rem;
+  margin-left: -2rem;
+  margin-top: 1rem;
 }
 
 .latest-news {
@@ -297,6 +364,10 @@ footer .row {
   margin-bottom: 0.5rem;
 }
 
+#contact-heading {
+  margin-top: 1rem;
+}
+
 .contact {
   list-style: none;
   margin-left: -3rem;
@@ -304,10 +375,11 @@ footer .row {
 }
 
 #map {
-  left: 8%;
+  margin-top: 0.25rem;
+  left: 13%;
   height: 16rem;
   width: 20rem;
-  border: solid 5px #FFF;
+  border: solid 2px #FFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -347,6 +419,11 @@ footer .row {
   font-weight: 400;
   text-transform: uppercase;
   margin: auto;
+}
+
+#tweet {
+  color: rgb(70, 154, 233) !important;
+  margin-right: 0.5rem;
 }
 
 #navbar-social {
