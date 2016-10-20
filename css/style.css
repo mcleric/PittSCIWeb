@@ -19,10 +19,11 @@ body {
                               TOP NAVIGATION
 ********************************************************************************/
 
-#navbar-top {
+#nav-top {
   background: linear-gradient(to bottom, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 3.5rem;
+  height: 3.6rem;
+  border-bottom: 1.8px solid #333;
 }
 
 .seal {
@@ -54,6 +55,24 @@ body {
   padding-top: 0.25rem;
 }
 
+#toggler {
+  background-color: #FFF !important;
+}
+
+.navbar-toggle
+{
+    position:relative;
+    float:right;
+    padding:9px 10px;
+    margin-top:8px;
+    margin-right:15px;
+    margin-bottom:8px;
+    background-color:transparent;
+    background-image:none;
+    border-radius:4px;
+    color: #000;
+}
+
 /*******************************************************************************
                             HOMEPAGE (INDEX.HTML)
 ********************************************************************************/
@@ -61,16 +80,32 @@ body {
 .carousel {
   margin-bottom: 4rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom: solid 1px #333;
+  /*height: 32.1rem;*/
+  height: 90.2vh;
+  border-bottom: solid 4px #333;
 }
 
 .carousel-caption {
   z-index: 10;
+  background-color: rgba(180, 180, 180, 0.6);
+  /*border: solid 1px #FFF;*/
+  /*opacity: 0.6;*/
+  padding: 2rem;
+  border-radius: 1rem;
+  bottom: 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h1 {
   font-family: 'Open Sans', sans-serif;
+  font-size: 2.25rem !important;
+  margin-bottom: 1.5rem;
 }
 
 .carousel-item {
-  height: 32rem;
+  /*height: 32rem;*/
+  height: 90vh;
   background-color: #777;
 }
 
@@ -79,7 +114,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  min-height: 90vh;
 }
 
 .carousel-indicators {
@@ -403,6 +438,64 @@ footer .row {
 
   /* Media query if we choose to implement responsive designs for mobile */
 
+
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .carousel img {
+    overflow: hidden;
+    background-size: auto;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .carousel-caption .btn {
+    : center;
+  }
+
+  .img-circle {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+
+  .left-news img {
+    margin-bottom: 1.25rem;
+    width: 22rem;
+    height: 10rem;
+  }
+
+  .left-news p {
+    margin-bottom: 4rem;
+  }
+
+  #upcoming-event-heading {
+    margin-bottom: 3rem;
+  }
+
+  .featured-event {
+    height: 9rem;
+  }
+
+  .left-events p {
+    margin-bottom: 4rem;
+  }
+
+  #navbar-bottom-links {
+    visibility: hidden;
+  }
+
+  #navbar-social {
+    visibility: visible;
+    left: 1rem;
+  }
+
+
+
+
 }
 
 /*******************************************************************************
@@ -413,6 +506,7 @@ footer .row {
   background: linear-gradient(to top, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 3.5rem;
+  border-top: 1.8px solid #333;
 }
 
 #navbar-bottom a {
