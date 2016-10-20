@@ -17,9 +17,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <link rel="canonical" href="https://sci.pitt.edu">
+    <link rel="canonical" href="https://cs.pitt.edu">
 
-    <title>Pitt SCI</title>
+    <title>Pitt Computer Science</title>
 
 <!--                         FONT STYLESHEETS
 ========================================================================== -->
@@ -43,11 +43,11 @@
 
     <nav class="navbar navbar-fixed-top bg-faded" id="navbar-top">
       <a href="#" class="navbar-logo pull-left"><img class="seal" src="img/pitt-seal.png" alt="Seal of Pitt"></a>
-      <a href="#" class="navbar-brand">University of Pittsburgh</a>
+      <a href="#" class="navbar-brand">University of Pittsburgh | Computer Science</a>
       <ul class="nav navbar-nav pull-right">
-        <li class="nav-item active">
+        <!-- <li class="nav-item active">
           <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#">Admissions</a>
         </li>
@@ -122,48 +122,96 @@
         <div class="col-lg-4">
           <img class="img-circle" src="img/undergrad1.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Undergraduate</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p><a class="btn btn-secondary" href="#" role="button">More info &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <img class="img-circle" src="img/grad1.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Graduate</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p><a class="btn btn-secondary" href="#" role="button">More info &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <img class="img-circle" src="img/faculty1.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Faculty</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p><a class="btn btn-secondary" href="#" role="button">More info &raquo;</a></p>
         </div>
       </div>
     </div>
 
-
+<!--                          NEWS (LEFT-SIDE)
+============================================================================ -->
 
     <hr class="featurette-divider">
-    <div class="row featurette news-section">
-      <div class="col-md-6">
-        <h2 class="featurette-heading">Recent SCI News</h2>
-        <ul class="news text-muted">
-          <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</li>
-          <li>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</li>
-          <li>Consectetur adipiscing elit, sed do eiusmod. Tempor incididunt ut labore et dolore magna aliqua.</li>
-          <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+
+    <div class="row news">
+        <div class="col-md-6 left-news">
+          <h2 class="featurette-heading" id="headline-news-heading">Headline News</h2>
+          <h5>Homecoming week is here! #PittHC16</h5>
+          <div class="news-item">
+            <div class="news-info">
+              <li class="time text-muted"><i>Wed, Oct 19, 1:00pm</i></li>
+            </div>
+          </div>
+          <img class="headline-news-image" src="img/hc16.jpg">
+          <p class="text-muted"><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore. Exercitationem ullam corporis suscipit laboriosam. Ut enim ad minima veniam.</p>
+        </div>
+
+<!--                          NEWS (RIGHT-SIDE)
+============================================================================ -->
+
+      <div class="col-md-6" id="vertical-separator">
+        <h2 class="featurette-heading" id="recent-news-heading">Recent CS News</h2>
+        <ul class="news-list">
+          <div class="news-item">
+            <!-- <img class="news-thumbnail" src="img/a.jpg"> -->
+            <div class="news-info">
+              <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+              <li class="news-details text-muted"><i><b>Description:</b> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</i></li>
+            </div>
+          </div>
+          <div class="news-item">
+            <!-- <img class="news-thumbnail" src="img/a.jpg"> -->
+            <div class="news-info">
+              <li><a href="#">Sed do eiusmod tempor incididunt ut labore et dolore.</a></li>
+              <li class="news-details text-muted"><i><b>Description:</b> Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</i></li>
+            </div>
+          </div>
+          <div class="news-item">
+            <!-- <img class="news-thumbnail" src="img/a.jpg"> -->
+            <div class="news-info">
+              <li><a href="#">Tempor incididunt ut labore et dolore.</a></li>
+              <li class="news-details text-muted"><i><b>Description:</b> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</i></li>
+            </div>
+          </div>
+          <div class="news-item">
+            <!-- <img class="news-thumbnail" src="img/a.jpg"> -->
+            <div class="news-info">
+              <li><a href="#">Consectetur adipiscing dempor incididunt.</a></li>
+              <li class="news-details text-muted"><i><b>Description:</b> Magni dolores eos qui ratione eiusmod tempor incididunt ut nisi ut aliquid ex ea commodi.</i></li>
+            </div>
+          </div>
+          <div class="news-item">
+            <!-- <img class="news-thumbnail" src="img/a.jpg"> -->
+            <div class="news-info">
+              <li><a href="#">Exercitationem ullam corporis suscipit laboriosam.</a></li>
+              <li class="news-details text-muted"><i><b>Description:</b> Voluptatem sequi nesciunt hemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</i></li>
+            </div>
+          </div>
+          <p><a class="btn btn-secondary" id="news-btn" href="#" role="button">More news &raquo;</a></p>
         </ul>
       </div>
-      <div class="col-md-6">
-        <img class="sennott" src="img/sennott.jpg">
-      </div>
     </div>
+
     <hr class="featurette-divider">
 
-
+<!--                         EVENTS (LEFT-SIDE)
+============================================================================ -->
 
     <div class="row featurette">
       <div class="col-md-6 left-events">
-        <h2 class="featurette-heading">Featured Event</h2>
+        <h2 class="featurette-heading" id="featured-event-heading">Featured Event</h2>
         <h5>Grace Hopper Celebration of Women in Computing</h5>
         <img class="featured-event" src="img/grace-hopper-copy.jpg">
         <div class="event">
@@ -176,10 +224,14 @@
             <li>Grace Hopper Conference</li>
           </div>
         </div>
-        <p class="text-muted"><b>Details:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p class="text-muted"><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div>
+
+<!--                          NEWS (RIGHT-SIDE)
+============================================================================ -->
+
       <div class="col-md-6" id="vertical-separator">
-        <h2 class="featurette-heading">Upcoming Events</h2>
+        <h2 class="featurette-heading" id="upcoming-event-heading">Upcoming Events</h2>
         <ul class="events">
           <div class="event">
             <div class="calendar">
@@ -224,10 +276,8 @@
           <li><p><a class="btn btn-secondary" href="#" role="button">More events &raquo;</a></p></li>
         </ul>
       </div>
-      <div class="col-md-5 pull-md-7">
-        <img class="featurette-image img-fluid m-x-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
     </div>
+
     <hr class="featurette-divider">
 
 <!--                               FOOTER
@@ -237,16 +287,16 @@
       <div class="container foot">
         <div class="row">
           <div class="col-lg-4">
-            <h3 id="late">LATEST NEWS</h3>
+            <h3 id="tweet-heading"><i class="fa fa-twitter" id="tweet" aria-hidden="true"></i>Follow @PittCompSci</h3>
             <ul class="latest-news text-muted">
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Sed do eiusmod tempor incididunt ut labore et dolore.</li>
-              <li>Consectetur adipiscing elit, sed do eiusmod.</li>
-              <li>Tempor incididunt ut labore et dolore magna aliqua.</li>
+              <li>@PittCompSci: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>@PittCompSci: Sed do eiusmod tempor incididunt ut labore et dolore.</li>
+              <li>@PittCompSci: Consectetur adipiscing elit, sed do eiusmod.</li>
+              <li>@PittCompSci: Incididunt ut labo, psum dolor sit</li>
             </ul>
           </div>
           <div class="col-lg-4" id="vertical-separators">
-            <h3>CONTACT US</h3>
+            <h3 id="contact-heading">Contact Us</h3>
             <ul class="contact  text-muted">
               <li>Dept of Computer Science</li>
               <li>6135 Sennott Square</li>
