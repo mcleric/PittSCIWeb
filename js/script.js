@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	// Toggle menu animation
-	$(".hamburger").click(function(){
+	$(".sidebar-hamburger").click(function(){
 		$(this).toggleClass("open");
 	});
 });
 
 
 $(document).ready(function () {
-  var trigger = $('.hamburger'),
+  var trigger = $('.sidebar-hamburger'),
       overlay = $('.overlay'),
      isClosed = false;
 
