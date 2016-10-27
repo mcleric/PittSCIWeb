@@ -1,5 +1,5 @@
 /********************************************************************
-                                GENERAL
+                              GENERAL
 ********************************************************************/
 
 /* Prevent scroll on narrow devices */
@@ -15,6 +15,8 @@ body {
   padding-bottom: 60px;
   background: radial-gradient(ellipse at center, rgba(254,254,254,1) 0%, rgba(219,219,219,1) 85%, rgba(226,226,226,1) 100%);
 }
+
+/* Toggle to outline all page elements for easier positioning */
 
 /*body * {
   border: 1px solid #FFF;
@@ -55,6 +57,8 @@ body {
   padding-top: 0.5rem;
 }
 
+/* Move navigation options to the right */
+
 #navbarResponsive {
   float: right;
 }
@@ -81,7 +85,7 @@ body {
 
 .hamburger div {
   position: absolute;
-   left: 0;
+  left: 0;
   display: block;
   width: 1.5rem;
   height: 0.2rem;
@@ -126,13 +130,17 @@ body {
   transform: rotate(-45deg);
 }
 
-/*******************************************************************************
-                            HOMEPAGE (INDEX.HTML)
-********************************************************************************/
+/********************************************************************
+                          CAROUSEL SECTION
+********************************************************************/
+
+/* Carousel */
 
 .carousel {
   height: 65vh;
 }
+
+/* Container that holds each carousel slide heading and button */
 
 .carousel-caption {
   z-index: 10;
@@ -162,23 +170,29 @@ body {
   min-width: 100%;
 }
 
+/* Filter for the carousel to darken borders to draw eyes into image */
+
 .shadow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0px 0px 120px 0px rgba(0,0,0,1);
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 120px 0px rgba(0,0,0,1);
+  top: 0;
+  left: 0;
 }
 
 /********************************************************************
                           PEOPLE SECTION
 ********************************************************************/
 
+/* Holds undergrad, grad, and faculty sections for ease of access */
+
 .people .col-lg-4 {
   text-align: center;
   padding-top: 3rem;
 }
+
+/* Generic circle to hold people section images */
 
 .img-circle {
   border: solid 4px #FFF;
@@ -210,6 +224,8 @@ body {
                                 NEWS SECTION
 ********************************************************************************/
 
+/* Container to hold a featured news story, image, and details */
+
 .featurette-divider {
   margin: 2rem 4rem 3rem 4rem;
 }
@@ -230,6 +246,8 @@ body {
 .featured-news-container a {
   text-decoration: none;
 }
+
+/* Featured news image */
 
 .featured-news-container img {
   height: 100%;
@@ -267,8 +285,14 @@ body {
   margin-top: 1rem;
 }
 
-#vertical-separator {
+/* Vertical featurette dividers */
+
+#vertical-separator-left {
   border-left: 1px solid #DDD;
+}
+
+#vertical-separator-right {
+  border-right: 1px solid #DDD;
 }
 
 #recent-news-heading {
@@ -283,6 +307,8 @@ body {
                        FEATURED EVENT SECTION
 ********************************************************************/
 
+/* Container that holds a featured events info and large image */
+
 .events-container {
   margin-bottom: 2.5rem;
 }
@@ -294,6 +320,8 @@ body {
 .featured-event a {
   text-decoration: none;
 }
+
+/* Image of featured event */
 
 .featured-event-image {
   height: 100%;
@@ -313,9 +341,13 @@ body {
                       UPCOMING EVENTS SECTION
 ********************************************************************/
 
+/* Container that holds upcoming events section list and calendar icons */
+
 #upcoming-event-heading {
   margin-left: 2.5rem;
 }
+
+/* List of upcoming events and their date, time, and location */
 
 .event-list li {
   list-style: none;
@@ -336,6 +368,8 @@ body {
   width: 80%;
   padding-left: 1rem;
 }
+
+/* Calendar date icon */
 
 .calendar {
   display: flex;
@@ -365,6 +399,8 @@ body {
                             FOOTER SECTION
 ********************************************************************/
 
+/* Footer container that holds Twitter client, contact info, and Google Maps */
+
 .footer-container {
   background: #EEE;
   text-align: center;
@@ -375,15 +411,17 @@ body {
 
 footer ul {
   text-align: left;
-	left: 0;
-	padding: 0;
+  left: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 footer .row {
   padding-top: 2rem;
-	padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
+
+/* Twitter section */
 
 #tweet {
   color: rgb(70, 154, 233) !important;
@@ -394,15 +432,16 @@ footer .row {
   text-align: center;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-	margin-right: 2.5em;
+  margin-right: 2.5em;
   width: 85%;
 }
+
+/* Acts as a Twitter widget to hold most recent tweets */
 
 .twitter-feed {
   display: flex;
   flex-flow: column;
-	margin-right: 2.5rem;
-  /*background: #333;*/
+  margin-right: 2.5rem;
   background: linear-gradient(135deg, rgba(17,17,17,1) 0%, rgba(51,51,51,1) 35%, rgba(68,68,68,1) 78%, rgba(85,85,85,1) 100%);
   color: #FFF !important;
   padding: 1rem 1rem 0rem 1rem;
@@ -418,8 +457,8 @@ footer .row {
 }
 
 .twitter-feed-item {
-	display: flex;
-	flex-flow: row;
+  display: flex;
+  flex-flow: row;
 }
 
 .twitter-feed-item span {
@@ -438,6 +477,8 @@ footer .row {
   margin-bottom: 0.75rem;
 }
 
+/* Basic contact section */
+
 #contact-heading {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
@@ -454,8 +495,10 @@ footer .row {
 }
 
 footer span {
-	margin-right: -0.30rem;
+  margin-right: -0.30rem;
 }
+
+/* Google Maps section */
 
 .directions {
   text-align: center;
@@ -474,6 +517,8 @@ footer span {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Basic vertical featurette dividers for footer */
+
 #vertical-separators {
   border-left: solid 1px #DDD;
   border-right: solid 1px #DDD;
@@ -489,6 +534,8 @@ footer span {
   background: linear-gradient(to top, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
   height: 4rem;
 }
+
+/* Social icon format */
 
 #nav-social {
   margin: 0;
@@ -514,10 +561,10 @@ footer span {
 }
 
 /********************************************************************
-                      HOMEPAGE @MEDIA 480PX
+              RESPONSIVE OPTIONS FOR TABLETS / MOBILE
 ********************************************************************/
 
-/* Adjusts content sizing for mobile displays */
+/* Adjusts content sizing for tablet and mobile displays */
 
 @media screen and (max-width: 992px) {
 
@@ -554,7 +601,7 @@ footer span {
   }
 
   .img-circle {
-	  height: 13rem;
+    height: 13rem;
 	  width: 13rem;
   }
 
@@ -617,21 +664,21 @@ footer span {
     margin-top: -0.5rem;
   }
 
-	.footer-container {
-		height: auto;
+  .footer-container {
+	  height: auto;
     background: none;
-	}
+  }
 
   #tweet-heading {
     text-align: center;
-	  margin-right: 0;
-	  margin-bottom: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
 	  margin-top: 1rem;
   }
 
   .twitter-feed {
-	  width: 80%;
-	  height: auto;
+    width: 80%;
+    height: auto;
     margin-bottom: 3.25rem;
 	  margin-right: 0;
   }
@@ -640,9 +687,9 @@ footer span {
     margin-bottom: 1rem;
   }
 
-	.directions {
-		margin-left: 0;
-	}
+  .directions {
+	  margin-left: 0;
+  }
 
   #map {
     margin-top: -0.75rem;
@@ -654,7 +701,7 @@ footer span {
   #nav-social {
     line-height: 0;
     margin-top:  -0.15rem;
-		font-size: 1.8rem;
-		width: 100%;
-	}
+    font-size: 1.8rem;
+    width: 100%;
+  }
 }
