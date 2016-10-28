@@ -6,7 +6,6 @@
 ================================================================= -->
 
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,9 +17,7 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <link rel="canonical" href="https://cs.pitt.edu">
-
     <title>Pitt Computer Science</title>
 
 <!-- ================================================================
@@ -37,7 +34,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/00cb17220a.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
   </head>
 
 <!-- ================================================================
@@ -45,7 +41,6 @@
 ================================================================= -->
 
   <body>
-
     <nav class="navbar navbar-default navbar-fixed-top bg-faded" id="nav-top">
       <a href="#" class="navbar-logo pull-left"><img class="seal" src="img/pitt-seal.png" alt="Seal of Pitt"></a>
       <a href="#" class="navbar-brand hidden-sm-down">University of Pittsburgh | Computer Science</a>
@@ -107,13 +102,15 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <img class="first-slide" src="img/group.jpg" alt="First slide">
+          <div class="shadow"></div>
           <div class="carousel-caption text-xs-left">
             <h1>Trying to determine if Computer Science is right for you?</h1>
             <p><a class="btn btn-sm btn-primary" href="#" role="button">Find out</a></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="second-slide" src="img/group.jpg" alt="Second slide">
+          <img class="second-slide" src="img/healthcare.jpg" alt="Second slide">
+          <div class="shadow"></div>
           <div class="container">
             <div class="carousel-caption">
               <h1>See how software is driving the healthcare industry.</h1>
@@ -122,7 +119,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="third-slide" src="img/group.jpg" alt="Third slide">
+          <img class="third-slide" src="img/student.jpg" alt="Third slide">
+          <div class="shadow"></div>
           <div class="container">
             <div class="carousel-caption text-xs-right">
               <h1>Find out how to get the most out of your college experience.</h1>
@@ -157,7 +155,7 @@
           <img class="img-circle" src="img/grad1.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Graduate</h2>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">More info &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="grad.html" role="button">More info &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <img class="img-circle" src="img/faculty1.jpg" alt="Generic placeholder image" width="140" height="140">
@@ -172,10 +170,8 @@
                         FEATURED NEWS SECTION
 ================================================================= -->
 
-    <hr class="featurette-divider">
-
-    <div class="row news">
-
+    <hr class="featurette-divider" >
+    <div class="row news" id="vertical-separator-right">
       <div class="col-lg-1"></div>
       <div class="col-lg-5 featured-news-container">
         <h2 class="featurette-heading" id="featured-news-heading">Headline News</h2>
@@ -185,14 +181,13 @@
         <p class="news-details text-muted"><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore. Exercitationem ullam corporis suscipit laboriosam. Ut enim ad minima veniam.</p>
         <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Read more &raquo;</a></p>
       </div>
-
       <hr class="featurette-divider hidden-lg-up">
 
 <!-- ================================================================
                          RECENT NEWS SECTION
 ================================================================= -->
 
-      <div class="col-lg-5 recent-news-container" id="vertical-separator">
+      <div class="col-lg-5 recent-news-container" id="vertical-separator-left">
         <h2 class="featurette-heading" id="recent-news-heading">Recent CS News</h2>
         <ul class="news-list">
           <div class="news-item">
@@ -231,10 +226,8 @@
                        FEATURED EVENT SECTION
 ================================================================= -->
 
-    <div class="row events-container">
-
+    <div class="row events-container" id="vertical-separator-right">
       <div class="col-lg-1"></div>
-
       <div class="col-md-5 featured-event">
         <h2 class="featurette-heading" id="featured-event-heading">Featured Event</h2>
         <a href="#">Grace Hopper Celebration of Women in Computing</a>
@@ -251,14 +244,13 @@
         </div>
         <p class="news-details text-muted"><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore luptatem sequi nesciunt hemo enim ipsam volupta quia voluptas sit aspernatur aut odit aut fugit voluptatem sequi nesciunt.</p>
       </div>
-
       <hr class="featurette-divider hidden-lg-up">
 
 <!-- ================================================================
                       UPCOMING EVENTS SECTION
 ================================================================= -->
 
-      <div class="col-md-5" id="vertical-separator">
+      <div class="col-md-5" id="vertical-separator-left">
         <h2 class="featurette-heading" id="upcoming-event-heading">Upcoming Events</h2>
         <ul class="event-list">
           <div class="event">
@@ -304,33 +296,75 @@
           <li><p><a class="btn btn-primary" id="events-btn" href="#" role="button">More events &raquo;</a></p></li>
         </ul>
       </div>
-
       <div class="col-lg-1"></div>
     </div>
 
-<!--                               FOOTER
-============================================================================ -->
+<!-- ================================================================
+                           FOOTER SECTION
+================================================================= -->
 
     <footer>
-
         <div class="row footer-container">
-
           <div class="col-lg-1"></div>
-
-          <div class="col-lg-3 twitter-feed-container">
-            <h3 id="tweet-heading"><i class="fa fa-twitter" id="tweet" aria-hidden="true"></i>@PittCompSci</h3>
-            <ul class="latest-news text-muted">
-              <li><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Lorem ipsum dolor sit amet, consectetur adipiscing.</li>
-              <li><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Sed do eiusmod tempor incididunt ut labore et.</li>
-              <li><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Consectetur adipiscing elit, sed do eiusmod.</li>
-              <!-- <li><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Incididunt ut labo.</li> -->
+          <div class="col-lg-4 twitter-feed-container" align="center">
+            <h3 id="tweet-heading"><i class="fa fa-twitter" id="tweet" aria-hidden="true"></i>Follow Us @PittCompSci</h3>
+            <ul class="twitter-feed text-muted">
+              <li>
+                <div class="twitter-feed-item">
+                  <img class="twitter-icon" src="img/cstwitter.jpg">
+                  <p><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+              </li>
+              <li>
+                <div class="twitter-feed-item">
+                  <img class="twitter-icon" src="img/cstwitter.jpg">
+                  <p><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Sed do eiusmod tempor incididunt ut labore et.</p>
+                </div>
+              </li>
+              <li>
+                <div class="twitter-feed-item">
+                  <img class="twitter-icon" src="img/cstwitter.jpg">
+                  <p><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Consectetur adipiscing elit, sed do eiusmod.
+                </div>
+              </li>
+              <li>
+                <div class="twitter-feed-item hidden-lg-up">
+                  <img class="twitter-icon" src="img/cstwitter.jpg">
+                  <p><span style="color: rgb(70, 154, 233)"><b>@PittCompSci</b></span>: Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+              </li>
             </ul>
           </div>
-
           <hr class="featurette-divider hidden-lg-up">
-
-          <div class="col-lg-4" id="vertical-separators" align="center">
-            <h3 id="contact-heading">Get Directions with Google</h3>
+          <div class="col-lg-2" id="vertical-separators" align="center">
+            <h3 id="contact-heading">Contact Us</h3>
+            <ul class="contact  text-muted">
+              <a href="#">
+                <li>Dept of Computer Science</li>
+                <li>6135 Sennott Square</li>
+                <li>210 S Bouquet St</li>
+                <li>Pittsburgh, PA 15260-9161</li>
+                <li>USA</li>
+              </a>
+              <li><br /></li>
+              <li>Tel: 412-624-8490</li>
+              <li>Fax: 412-624-8854</li>
+              <li><br /></li>
+              <li>&copy 2016 Department of Computer Science</li>
+              <li><br /></li>
+            </ul>
+          </div>
+          <hr class="featurette-divider hidden-lg-up">
+          <div class="col-lg-4" align="center">
+            <h3 class="directions">Get directions on
+              <span style="color: rgb(50, 110, 240)">G</span>
+              <span style="color: rgb(200, 40, 40)">o</span>
+              <span style="color: rgb(240, 170, 10)">o</span>
+              <span style="color: rgb(50, 110, 240)">g</span>
+              <span style="color: rgb(45, 155, 65)">l</span>
+              <span style="color: rgb(200, 40, 40)">e</span>
+              !
+            </h3>
             <div id="map"></div>
             <script>
               function myMap() {
@@ -346,25 +380,6 @@
               }
             </script>
           </div>
-
-          <hr class="featurette-divider hidden-lg-up">
-
-          <div class="col-lg-3">
-            <h3 id="contact-heading">Contact Us</h3>
-            <ul class="contact  text-muted">
-              <a href="#">
-                <li>Dept of Computer Science</li>
-                <li>6135 Sennott Square</li>
-                <li>210 S Bouquet St</li>
-                <li>Pittsburgh, PA 15260-9161</li>
-                <li>USA</li>
-              </a>
-              <li><br /></li>
-              <li>Tel: 412-624-8490</li>
-              <li>Fax: 412-624-8854</li>
-            </ul>
-          </div>
-
           <div class="col-lg-1"></div>
         </div>
     </footer>
@@ -409,7 +424,6 @@
         </li>
       </ul>
     </nav>
-
   </body>
 
 <!-- ================================================================
@@ -419,10 +433,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
     <script type="text/javascript" src="js/script.js"></script>
-
   </body>
 </html>
