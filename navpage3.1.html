@@ -40,6 +40,7 @@
     <script src="https://use.fontawesome.com/00cb17220a.js"></script>
 	
 	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" href="css/style-navpage.css">
 
   </head>
@@ -108,8 +109,9 @@
     <hr class="featurette-divider">
 
 <div class ="row navigation-tabs">
-
+	
 	<div class="col-lg-2"></div>
+	
 	<ul class="nav nav-pills nav-stacked col-lg-1">
 		<li class="nav-item">
 			<a class="nav-link active" href="#tab_a" data-toggle="pill">Graduate</a>
@@ -193,7 +195,35 @@
                          RECENT NEWS SECTION
 ================================================================= -->
 
-      <div class="col-lg-5 recent-news-container" id="vertical-separator">
+
+	<div class="col-lg-5 featured-event" id = "vertical-separator">
+        <h2 class="featurette-heading" id="featured-event-heading">Featured Event</h2>
+        <a href="#">Grace Hopper Celebration of Women in Computing</a>
+        <img class="featured-event-image" src="img/grace-hopper-copy.jpg">
+        <div class="event">
+          <div class="calendar">
+            <span class="calendar-top">OCT</span>
+            <span class="calendar-bottom">19</span>
+          </div>
+          <div class="date">
+            <li class="time text-muted"><i>Wed, Oct 19, 1:00pm - Houston, TX</i></li>
+            <li>Grace Hopper Conference</li>
+          </div>
+        </div>
+        <p class="news-details text-muted"><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore luptatem sequi nesciunt hemo enim ipsam volupta quia voluptas sit aspernatur aut odit aut fugit voluptatem sequi nesciunt.</p>
+      </div>
+	  
+	</div>
+
+<!-- ================================================================
+                       FEATURED EVENT SECTION
+================================================================= -->
+
+    <div class="row events-container">
+
+      <div class="col-lg-1"></div>
+
+      <div class="col-lg-5 recent-news-container">
         <h2 class="featurette-heading" id="recent-news-heading">Recent CS News</h2>
         <ul class="news-list">
           <div class="news-item">
@@ -223,35 +253,6 @@
           <p><a class="btn btn-primary" id="news-btn" href="#" role="button">More news &raquo;</a></p>
         </ul>
       </div>
-      <div class="col-lg-1"></div>
-    </div>
-
-    <hr class="featurette-divider">
-
-<!-- ================================================================
-                       FEATURED EVENT SECTION
-================================================================= -->
-
-    <div class="row events-container">
-
-      <div class="col-lg-1"></div>
-
-      <div class="col-md-5 featured-event">
-        <h2 class="featurette-heading" id="featured-event-heading">Featured Event</h2>
-        <a href="#">Grace Hopper Celebration of Women in Computing</a>
-        <img class="featured-event-image" src="img/grace-hopper-copy.jpg">
-        <div class="event">
-          <div class="calendar">
-            <span class="calendar-top">OCT</span>
-            <span class="calendar-bottom">19</span>
-          </div>
-          <div class="date">
-            <li class="time text-muted"><i>Wed, Oct 19, 1:00pm - Houston, TX</i></li>
-            <li>Grace Hopper Conference</li>
-          </div>
-        </div>
-        <p class="news-details text-muted"><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore luptatem sequi nesciunt hemo enim ipsam volupta quia voluptas sit aspernatur aut odit aut fugit voluptatem sequi nesciunt.</p>
-      </div>
 
       <hr class="featurette-divider hidden-lg-up">
 
@@ -259,7 +260,7 @@
                       UPCOMING EVENTS SECTION
 ================================================================= -->
 
-      <div class="col-md-5" id="vertical-separator">
+      <div class="col-lg-5" id="vertical-separator">
         <h2 class="featurette-heading" id="upcoming-event-heading">Upcoming Events</h2>
         <ul class="event-list">
           <div class="event">
