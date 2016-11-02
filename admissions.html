@@ -41,7 +41,7 @@
                          HEADER NAVIGATION
 ================================================================= -->
 
-  <body>
+  <body data-spy="scroll" data-target="#side" data-offset="">
 	
 	<div id="navbar-top"></div>
 	
@@ -50,36 +50,31 @@
 		<img class="img-circle" src="img/pitt-seal.png" data-toggle="collapse" href="#collapse1"></img>
 		</div>
 		<div id="collapse1" class="collapse in">
-		<ul class="list-group" id="nav-items">
-		<a class="scroll-link" data-id="0">
-			<li class="btn list-group-item">
-				Top
-			</li>
-		</a>
-		<a class="scroll-link" data-id="1">
-			<li class="btn list-group-item">
-				Something
-			</li>
-		</a>
-		<a class="scroll-link" data-id="2">
-			<li class="btn list-group-item">
-				Something
-			</li>
-		</a>
-		<a class="scroll-link" data-id="3">
-			<li class="btn list-group-item">
-				Something
-			</li>
-		</a>
-		</ul>
+			<ul class="nav nav-pills nav-stacked list-group" id="nav-items">
+				<li>
+					<a class="nav-link scroll-link active" href="#r0" data-id="r0">zero</a>
+				</li>
+				<li>
+					<a class="nav-link scroll-link" href="#r1" data-id="r1">one</a>
+				</li>
+				<li>
+					<a class="nav-link scroll-link" href="#r2" data-id="r2">two</a>
+				</li>
+				<li>
+					<a class="nav-link scroll-link" href="#r3" data-id="r3">three</a>
+				</li>
+				<li>
+					<a class="nav-link scroll-link" href="#r4" data-id="r4">four</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 
-	<div class="content">
-		<div class="row content-header" id="0">
+	<div class="content"  id="">
+		<div class="row content-header" id="r0">
 			<h1>Admissions</h1>
 		</div>
-		<div class="content-row" id="1">
+		<div class="content-row" id="r1">
 			<div class="container">
 				<div class="col-md-12">
 					<div class="col-md-6 col-sm-12 col-xs-12">
@@ -91,7 +86,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-row" id="3">
+		<div class="content-row" id="r2">
 			<div class="container">
 				<div class="col-md-12">
 					<div class="img-text col-sm-12 col-md-6 col-xs-12">
@@ -106,10 +101,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="row content-row" id="2">
+		<div class="row content-row" id="r3">
 			<img class="content-img" src="img/healthcare.jpg" alt="First slide">
 		</div>
-		<div class="row content-row" id="3">
+		<div class="row content-row" id="r4">
 			<img class="content-img" src="img/student.jpg" alt="First slide">
 		</div>
 	</div>
@@ -122,7 +117,7 @@
 ================================================================= -->
 
     <footer>
-        <div id="footer"></div>
+		<div id="footer"></div>
     </footer>
 
 <!-- ================================================================

@@ -71,3 +71,8 @@ function scrollToID(id, speed){
 		mainNav.removeClass("open");
 	}
 }
+
+$('body').scrollspy({ 
+	target: '#collapse1',
+	offset: $(window).height() * 0.2
+})

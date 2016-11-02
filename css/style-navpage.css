@@ -8,6 +8,11 @@
   border: 1px solid #000;
 }*/
 
+body {
+	position: relative;
+	z-index: -100;
+}
+
 /* NAVIGATION PILLS */
 
 .img-circle {
@@ -61,6 +66,10 @@
 	text-align: center;
 	right: 1rem;
 	float: right;
+	z-index: 200000;
+}
+
+.content {
 }
 
 .content-row {
