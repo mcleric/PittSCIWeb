@@ -15,6 +15,11 @@
 	margin-top: 1rem;
 }
 
+.rectangle.panel-completer {
+    height:100px;
+    background:blue;
+}
+
 .tab-content {
 	color: rgb(202, 203, 154);
 	background-color: rgba(62,70,97,1);
@@ -44,3 +49,97 @@
 .nav-pills .nav-item {
 	text-align: center;
 }
+
+.sidebar {
+	position: fixed;
+	text-align: center;
+	right: 1rem;
+}
+
+.side-links {
+	position: fixed;
+	text-align: center;
+	right: 1rem;
+	float: right;
+}
+
+.content-row {
+	height: 66vh;
+	overflow: hidden;
+}
+
+.content-row:nth-child(even){
+	background-color: rgb(0, 43, 94);
+}
+.content-row:nth-child(odd){
+	background-color: rgb(197, 168, 118);
+}
+
+.content-img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.content-header {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.content-header img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.content-header h1 {
+  
+  font-size: 10vh;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  
+  text-align: center;
+  padding-top: 20rem;
+  
+  color: #fff !important;
+  text-shadow: 0 0 2px #000;
+}
+
+.content-header p {
+  
+  font-size: 8vh;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  
+  text-align: center;
+  padding-top: 0rem;
+  
+  color: #fff !important;
+  text-shadow: 0 0 2px #000;
+}
+
+.content-row img.img-circle{
+  border-radius: 50%;
+  height: 30rem;
+  min-width: 100%;
+  overflow: hidden;
+  margin-bottom: 0rem;
+  margin-top: 15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-row img.img-circle img{
+  overflow: hidden;
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  padding:1rem;
+  margin-bottom: 0rem;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-text {
+	margin-top: 15%;
+	text-align: center;
+	color: white;
+}
+
