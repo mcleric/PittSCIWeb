@@ -1,3 +1,17 @@
+/* Prevent scroll on narrow devices */
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Padding to compensate for navigation overlap */
+
+body {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: radial-gradient(ellipse at center, rgba(254,254,254,1) 0%, rgba(219,219,219,1) 85%, rgba(226,226,226,1) 100%);
+}
+
 /*******************************************************************************
                                    BODY
 ********************************************************************************/
@@ -13,11 +27,21 @@ body {
 	z-index: -100;
 }
 
+/* Pitt seal */
+
+.seal {
+  margin-top: 0.05rem;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
 /* NAVIGATION PILLS */
 
 .img-circle {
+	border: none;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
+	width: 13rem;
 }
 
 .tab-content {
@@ -53,6 +77,10 @@ body {
 	text-align: center;
 }
 
+.list-group {
+	margin-top: 5px;
+}
+
 .sidebar {
 	position: fixed;
 	text-align: center;
@@ -70,6 +98,7 @@ body {
 .content-row {
 	overflow: hidden;
 	background-size: cover;
+	min-height: 45vh;
 }
 
 .content-row:nth-child(even){
