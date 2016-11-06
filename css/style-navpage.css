@@ -20,11 +20,6 @@ body {
 	margin-top: 1rem;
 }
 
-.rectangle.panel-completer {
-    height:100px;
-    background:blue;
-}
-
 .tab-content {
 	color: rgb(202, 203, 154);
 	background-color: rgba(62,70,97,1);
@@ -43,12 +38,15 @@ body {
 .nav-pills .nav-link.active, 
 .nav-pills .nav-link.active:focus, 
 .nav-pills .nav-link.active:hover {
-	color: rgb(202, 203, 154) !important;
-	background-color: rgba(62,70,97,1);
+	color: rgb(197, 168, 118) !important;
+	background-color: rgb(0, 43, 94);
 }
 
 .nav-pills .nav-link  {
 	color: rgba(62,70,97,1) !important;
+	background-color: rgb(197, 168, 118);
+	border: solid 4px black;
+	margin-top: -5px;
 }
 
 .nav-pills .nav-item {
@@ -67,9 +65,6 @@ body {
 	right: 1rem;
 	float: right;
 	z-index: 200000;
-}
-
-.content {
 }
 
 .content-row {
@@ -102,7 +97,7 @@ body {
 
 
 .content-header h1 {
-  top: -100%;
+  bottom: 95%;
   
   font-size: 10vh;
   margin: 0 auto;
@@ -129,17 +124,6 @@ body {
   text-shadow: 0 0 2px #000;
 }
 
-.content-row img.img-circle{
-  border-radius: 50%;
-  height: 30rem;
-  min-width: 100%;
-  overflow: hidden;
-  margin-bottom: 0rem;
-  margin-top: 15%;
-  margin-bottom: 15%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .item-image {
   border: solid 4px #FFF;
   border-radius: 50%;
@@ -155,6 +139,7 @@ body {
   overflow: hidden;
   padding: 50%;
 }
+
 .item-image img {
   position: absolute;
   top: 0;
@@ -165,33 +150,19 @@ body {
   min-height: 100%;
 }
 
-.content-row img.img-circle img{
-  overflow: hidden;
-  display: block;
-  object-fit:contain;
-  overflow: hidden;
-  padding:1rem;
-  margin-bottom: 0rem;
-  
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .content-row h2 {
-	top: -100%;
-
-	font-size: 10vh;
 	margin: 0 auto;
 	font-weight: bold;
 
 	text-align: center;
 
 	color: #fff !important;
-	text-shadow: 0 0 2px #000;
-
+	text-shadow: 2px 2px #000;
+	background-color: rgba(0, 43, 94, 0.4);
 	position: relative;
 }
 
-.img-text {
+.item-text {
 	margin-top: 15%;
 	margin-bottom: 15%;
 	text-align: center;

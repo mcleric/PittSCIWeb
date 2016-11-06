@@ -74,5 +74,5 @@ function scrollToID(id, speed){
 
 $('body').scrollspy({ 
 	target: '#collapse1',
-	offset: $(window).height() * 0.2
+	offset: $(window).height() * 0.33
 })
