@@ -73,8 +73,8 @@ body {
 }
 
 .content-row {
-	height: 66vh;
 	overflow: hidden;
+	background-size: cover;
 }
 
 .content-row:nth-child(even){
@@ -99,6 +99,7 @@ body {
   min-height: 100%;
   min-width: 100%;
 }
+
 
 .content-header h1 {
   top: -100%;
@@ -135,14 +136,40 @@ body {
   overflow: hidden;
   margin-bottom: 0rem;
   margin-top: 15%;
+  margin-bottom: 15%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-image {
+  border: solid 4px #FFF;
+  border-radius: 50%;
+  min-width: 100%;
+  overflow: hidden;
+  margin-bottom: 0rem;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+  position: relative;
+  overflow: hidden;
+  padding: 50%;
+}
+.item-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  min-height: 100%;
 }
 
 .content-row img.img-circle img{
   overflow: hidden;
   display: block;
-  min-height: 100%;
-  min-width: 100%;
+  object-fit:contain;
+  overflow: hidden;
   padding:1rem;
   margin-bottom: 0rem;
   
@@ -166,6 +193,7 @@ body {
 
 .img-text {
 	margin-top: 15%;
+	margin-bottom: 15%;
 	text-align: center;
 	color: white;
 }
@@ -175,6 +203,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1vh;
+	margin-bottom: 1vh;
 	font-size: xx-large;
 	border-radius: 10rem;
 }
