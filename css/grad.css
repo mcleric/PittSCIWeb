@@ -17,14 +17,16 @@
 #nav-grad{
 	margin-left: 4.5rem;
 }
+/*
 #nav-grad ul li a{
 	padding-right: 7.5rem;
     border-top: solid .075rem;
     border-bottom: solid .075rem;
     border-color: #cacb9a;
 	font-size: larger;
+	margin: 0rem;
 }
-
+*/
 /*
 #nav-grad ul li ul li a{
 	padding-right: 7.5rem;
@@ -34,35 +36,21 @@
 	font-size: larger;
 }
 */
-#nav-grad ul li:first-child a{
+#nav-grad ul li:first-child a.outer-grad-link{
 	border-top: none;
 }
-#nav-grad ul li:last-child a{
+#nav-grad ul li:last-child a.outer-grad-link{
 	margin-bottom: 0rem;
 	border-bottom: none;
 }
+/*
 #nav-grad ul li	 a{
 	margin: 0rem;
-}
+}*/
 #nav-grad ul{
 	background-color: #cacb9a;
 }
 
-#internal{
-	
-}
-
-#internal ul{
-
-}
-
-#internal ul li{
-
-}
-
-#internal ul li a{
-
-}
 
 .grad-heading{
 	font-weight: 700;
@@ -71,22 +59,51 @@
     margin-bottom: 1rem;
 }
 
-.nav-link-grad {
-  display: inline-block;
-  background: linear-gradient(#666, #333);
-  height: 3rem;
+.outer-grad-link {
+	background: linear-gradient(to left, #2a46a2, #152351);
+	height: 3rem;
+	margin: 0rem;
+	padding-right: 7.5rem !important;
+	padding-top : .5rem !important;
+	padding-bottom: .5rem !important;
+	border-top: solid .075rem;
+	border-bottom: solid .075rem;
+	border-color: #cacb9a;
+	font-size: larger;
+	margin: 0rem;
   
   /*linear-gradient(to right, #3e4661, #5a658c);*/
   
   
 }
 
-.nav-link-grad.active, .nav-link-grad:hover{
+.outer-grad-link.active, .outer-grad-link:hover{
 	cursor: pointer;
-	background: linear-gradient(#333, #000);
+	color: rgb(202, 203, 154) !important;
+	background: linear-gradient(to right, #152351, #000);
 	/*linear-gradient(to right, #121e46, #253d8e);*/
 }
 
+#nav-grad ul#inner-nav li.inner-item a:hover, #nav-grad ul#inner-nav li.inner-item a:active{
+	background: #666;
+}
+
+#nav-grad ul#inner-nav li.inner-item a{
+	background: #999;
+    height: 1.75rem;
+    margin: 0rem;
+    padding-right: 7.5rem !important;
+	padding-left : 2rem !important;
+    padding-top: .0rem !important;
+    padding-bottom: .0rem !important;
+    /*border-top: solid .075rem;*/
+    border-bottom: solid .075rem;
+    border-color: #cacb9a;
+    font-size: medium;
+    
+	
+
+}
 #breadcrumb-container{
 	border-bottom-style: double;
     border-bottom-width: .25rem;
@@ -240,8 +257,8 @@
 			color: white;
 			/*need more margin on the left of links to accomodate the numbers*/
 			padding: 0 10px 0 60px;
-			background: #666;
-			background: linear-gradient(#666, #333);
+			background: #2a46a2;
+			background: linear-gradient(#2a46a2, #152351);
 			position: relative;
 		}
 		/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
@@ -259,12 +276,14 @@
 
 		/*hover/active styles*/
 		.breadcrumb a.active, .breadcrumb a:hover{
-			background: #333;
-			background: linear-gradient(#333, #000);
+			background: #152351;
+			background: linear-gradient(#152351, #000);
+			color: rgb(202, 203, 154) !important;
 		}
 		.breadcrumb a.active:after, .breadcrumb a:hover:after {
-			background: #333;
-			background: linear-gradient(135deg, #333, #000);
+			background: #152351;
+			background: linear-gradient(135deg, #152351, #000);
+			
 		}
 
 		/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
@@ -283,8 +302,8 @@
 			/*we need to prevent the arrows from getting buried under the next link*/
 			z-index: 1;
 			/*background same as links but the gradient will be rotated to compensate with the transform applied*/
-			background: #666;
-			background: linear-gradient(135deg, #666, #333);
+			background: #2a46a2;
+			background: linear-gradient(135deg, #2a46a2, #152351);
 			/*stylish arrow design using box shadow*/
 			box-shadow: 
 				2px -2px 0 2px rgba(0, 0, 0, 0.4), 
@@ -312,8 +331,8 @@
 			position: absolute;
 			top: 0;
 			left: 30px;
-			background: #444;
-			background: linear-gradient(#444, #222);
+			background: #1c2f6d;
+			background: linear-gradient(#1c2f6d, #0e1735);
 			font-weight: bold;
 		}
 
