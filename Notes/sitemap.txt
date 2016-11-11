@@ -1,27 +1,27 @@
 Home
 	Homepage
-		News & Announcements
-		Upcoming Events
-		"What is CS like" video
+		News & Announcements	NEWS
+		Upcoming Events			EVTS
+		"Why Pitt CS?" video
 		Featured org
-		Monthly newsletter
+		Monthly newsletter		MAIL-NEWS
 		Footer
 
-About http://cs.pitt.edu/about
-	Welcome == About http://cs.pitt.edu/about
+About http://cs.pitt.edu/about	ABT
+	Welcome == About http://cs.pitt.edu/about	ABT-WELC
 		<Show don't tell>
-	History http://cs.pitt.edu/about/history
+	History http://cs.pitt.edu/about/history	ABT-HIST
 		"First 30 years" 1966-1996
 			<20 years out of date. who cares?>
 		1965-2000 timeline
 			<16 years out of date>
-	Pittsburgh http://cs.pitt.edu/about/Pittsburgh
+	Pittsburgh http://cs.pitt.edu/about/Pittsburgh	ABT-PITT
 		Facts about pittsburgh?
-	Directions http://cs.pitt.edu/about/directions
+	Directions http://cs.pitt.edu/about/directions ABT-DRCT
 		directions to sennott, etc
-	Sennott Square Maps http://cs.pitt.edu/about/sennottmaps
+	Sennott Square Maps http://cs.pitt.edu/about/sennottmaps	ABT-MAPS
 		<put on google maps?>
-	CS Student Clubs http://cs.pitt.edu/about/csstudentorgs
+	CS Student Clubs http://cs.pitt.edu/about/csstudentorgs	ORGS-ABT
 		WICS
 		CSC
 		S4S
@@ -31,87 +31,87 @@ About http://cs.pitt.edu/about
 		Pitt Cybersecurity Club
 		LAN and Gaming Clubs
 			<no links? defunct?>
-	Affiliated Programs
+	Affiliated Programs	ABT-AFFL
 		External Links
 			ISP
 			Supercomputing Center
-	Technical Staff https://tech.cs.pitt.edu/
+	Technical Staff https://tech.cs.pitt.edu/	TECH
 		External Links
 			<Useful site. Who actually needs these? Just current Students/Faculty?>
-			Apply for CS Account
-			Technical FAQ
-			Submit a Help Ticket
-	Contact Us http://cs.pitt.edu/about/contact
+			Apply for CS Account	TECH-ACC
+			Technical FAQ			TECH-FAQ
+			Submit a Help Ticket	TECH-HELP
+	Contact Us http://cs.pitt.edu/about/contact	CTCT
 		Visiting the Dept
 		Contact Info for lots of people
 		
-People
-	Faculty
-	Staff
-	Graduate Students
+People	PPL
+	Faculty	PPL-FAC
+	Staff	PPL-STAFF
+	Graduate Students	PPL-GRAD
 		<lists of names with no identity or info>
-	Visiting Scholars
-	Industry Board
-	Directory
+	Visiting Scholars	PPL-VISIT
+	Industry Board		PPL-INDS
+	Directory			PPL-ALL
 		<even bigger list of everyone>
 		
-Research
-	List of dudes
-		"Full Profiles" ? <- lists info, recent publications, and interests
+Research	RSCH
+	List of dudes	RSCH-PPL
+		"Full Profiles" ? <- lists info, recent publications, and interests	RSCH-PPL-INFO
 		
-Undergraduate https://cs.pitt.edu/undergrads
-	Homepage
-		Visit (link to Contact Us page) https://cs.pitt.edu/about/contact#visit
-		Degrees
+Undergraduate https://cs.pitt.edu/undergrads	UDGR
+	Homepage	UDGR-HOME
+		Visit (link to Contact Us page) https://cs.pitt.edu/about/contact#visit CTCT-VISIT
+		Degrees	UDRG-DEG
 			Info on degrees
-			BS https://cs.pitt.edu/undergrads/bs
-			Concentrations https://cs.pitt.edu/undergrads/concentrations
-			Bioinfo https://cs.pitt.edu/undergrads/bioinformatics
-			BS+MS https://cs.pitt.edu/undergrads/bsms
-			CoE http://www.engineering.pitt.edu/computer/ (external link)
-			Minor/Related https://cs.pitt.edu/undergrads/minor
+			BS https://cs.pitt.edu/undergrads/bs	UDGR-DEG-BS
+			Concentrations https://cs.pitt.edu/undergrads/concentrations UDGR-DEG-CONC
+			Bioinfo https://cs.pitt.edu/undergrads/bioinformatics	UDGR-DEG-BIOI
+			BS+MS https://cs.pitt.edu/undergrads/bsms	UDGR-DEG-BSMS
+			CoE http://www.engineering.pitt.edu/computer/ (external link)	UDGR-DEG-COE
+			Minor/Related https://cs.pitt.edu/undergrads/minor	UDGR-DEG-MIN
 		Admission Info
-			External link to OAFA http://oafa.pitt.edu/
+			External link to OAFA http://oafa.pitt.edu/	ADMISS-UDGR
 			<they have a sweet website>
 		Resources
-			Advising https://cs.pitt.edu/undergrads/advising
-			Peer Tutors https://cs.pitt.edu/undergrads/crc
-			CS Undergrad Email Group https://list.pitt.edu/mailman/listinfo/cs-undergrad
+			Advising https://cs.pitt.edu/undergrads/advising	UDGR-ADVIS
+			Peer Tutors https://cs.pitt.edu/undergrads/crc		UDGR-CSRC
+			CS Undergrad Email Group https://list.pitt.edu/mailman/listinfo/cs-undergrad	MAIL-UDGR
 		About CS
 			External Links to cra.org
 		Employment
-			Departmental Jobs/Financial Assistance https://cs.pitt.edu/undergrads/finaid
-			CS Opportunities https://cs.pitt.edu/undergrads/opportunities
+			Departmental Jobs/Financial Assistance https://cs.pitt.edu/undergrads/finaid	UDGR-AID, UDGR-JOBS-PITT
+			CS Opportunities https://cs.pitt.edu/undergrads/opportunities					UDGR-JOBS
 				<part time jobs/internships/co ops, lots of stuff handled by other things here>
-			Pitt Career Services (external) http://www.studentaffairs.pitt.edu/cdpa/
-			Internships https://cs.pitt.edu/undergrads/internships
+			Pitt Career Services (external) http://www.studentaffairs.pitt.edu/cdpa/		CDPA-UDGR
+			Internships https://cs.pitt.edu/undergrads/internships							UDGR-CAPS, UDGR-ITRN
 				<all about CS1900/1902, not about actual internships>
-			Co-Op Program http://cs.pitt.edu/undergrads/coop
+			Co-Op Program http://cs.pitt.edu/undergrads/coop								UDGR-COOP
 				<about completing capstone requirement>
 
-	Advising http://cs.pitt.edu/undergrads/advising
+	Advising http://cs.pitt.edu/undergrads/advising	UDGR-ADVIS
 		General Info
 		Advising Docs
-			Pdfs
-			Biomatics info http://cs.pitt.edu/undergrads/bioinformatics
+			Pdfs	UDGR-ADVIS-REQS, UDGR-ADVIS-REQS-LIST
+			Biomatics info http://cs.pitt.edu/undergrads/bioinformatics	UDGR-BIOI
 		Resources
-			External links
-			Internships http://cs.pitt.edu/undergrads/internships
-			Co-Ops http://cs.pitt.edu/undergrads/coop
+			External links	A&S-REQS, A&S-COURSES, CDPA-UDGR
+			Internships http://cs.pitt.edu/undergrads/internships	UDGR-CAPS, UDGR-ITRN
+			Co-Ops http://cs.pitt.edu/undergrads/coop				UDGR-COOP
 		Important Dates
 			External links
-			A&S Student Calendar
-			Academic Calendar
-			Finals Schedule
+			A&S Student Calendar	CALENDAR-A&S
+			Academic Calendar		CALENDAR-PITT
+			Finals Schedule			CALENDAR-PITT-FINALS
 		Contact Us
 			emailTos
 		Current Term Advising
 			Permission numbers
-				http://cs.pitt.edu/schedule/permission
+				http://cs.pitt.edu/schedule/permission	UDGR-PERM
 				login with Pitt?
 
 	Courses
-		Course Descriptions http://cs.pitt.edu/schedule/courses
+		Course Descriptions http://cs.pitt.edu/schedule/courses	CRS-UDGR
 			<list of courses> 
 			links to course descriptions http://cs.pitt.edu/schedule
 				<decent template>
@@ -149,44 +149,44 @@ Undergraduate https://cs.pitt.edu/undergrads
 	Peer Tutoring http://cs.pitt.edu/undergrads/crc
 		Info on CRC
 
-Graduate https://cs.pitt.edu/grads
+Graduate https://cs.pitt.edu/grads	GRAD-HOME
 	Homepage
-		Degrees and Requirements
-			Master's Degree (MS) Requirements https://cs.pitt.edu/grads/regulationsPages#4
-			Doctorate (PhD) Requirements https://cs.pitt.edu/grads/regulationsPages#3
-			Full Regulations for Graduate Study https://cs.pitt.edu/grads/regulationsContent
+		Degrees and Requirements	GRAD-DEGS
+			Master's Degree (MS) Requirements https://cs.pitt.edu/grads/regulationsPages#4	GRAD-REGS-PG4
+			Doctorate (PhD) Requirements https://cs.pitt.edu/grads/regulationsPages#3		GRAD-REGS-PG3
+			Full Regulations for Graduate Study https://cs.pitt.edu/grads/regulationsContent	GRAD-REGS-INDEX
 				<home page of previous two>
-			Dual Master's Degree (MS) https://cs.pitt.edu/grads/dualms
+			Dual Master's Degree (MS) https://cs.pitt.edu/grads/dualms	GRAD-DEGS-DUAL
 		
 		Resources	
 			Cool Pittsburgh: Come to Learn, Come to Live! http://www.coolpgh.pitt.edu/
 				External link
-			Graduate Students List https://cs.pitt.edu/people/grad
+			Graduate Students List https://cs.pitt.edu/people/grad	PPL-GRAD
 				<list of names, links to pages>
-			Student Employment & Placement Assistance http://www.studentaffairs.pitt.edu/cdpa/
+			Student Employment & Placement Assistance http://www.studentaffairs.pitt.edu/cdpa/ CDPA
 				External Link
 			Summary of Workshops on Supporting Diversity in Systems Research https://cs.pitt.edu/grads/csdiversityreport
 				<just a paper. jesus.> 
-			Grad Forms https://cs.pitt.edu/grads/forms
+			Grad Forms https://cs.pitt.edu/grads/forms	GRAD-FRMS
 				<possibly the most important part of the site for grad students, but hard to understand?>
 				
 		Admissions and Financial Aid
-			Admission Information https://cs.pitt.edu/grads/admission
+			Admission Information https://cs.pitt.edu/grads/admission	ADMISS-GRAD
 				Begin application process
-			Prior to Enrollment https://cs.pitt.edu/grads/advising
-			Financial Assistance https://cs.pitt.edu/grads/finaid
-			Visit Us https://cs.pitt.edu/about/contact
+			Prior to Enrollment https://cs.pitt.edu/grads/advising		GRAD-ADVIS
+			Financial Assistance https://cs.pitt.edu/grads/finaid		GRAD-AID
+			Visit Us https://cs.pitt.edu/about/contact					CTCT
 		
 		Deadlines
-			admission dates
+			admission dates	GRAD-DATES
 		
 		Contact	
-			contact info for grad advisor
+			contact info for grad advisor CTCT-GRAD
 		
 		
 	Courses
-		Course Descriptions https://cs.pitt.edu/schedule/courses#graduate
-		Course Schedule https://cs.pitt.edu/schedule
+		Course Descriptions https://cs.pitt.edu/schedule/courses#graduate	CRS-GRAD
+		Course Schedule https://cs.pitt.edu/schedule	CRS-SCHD
 		
 	Admissions https://cs.pitt.edu/grads/admission
 		hotlinks to places on page
@@ -200,13 +200,13 @@ Graduate https://cs.pitt.edu/grads
 	Grad Forms
 	
 News and Events
-	News https://cs.pitt.edu/News
+	News https://cs.pitt.edu/News	NEWS
 		Press Releases https://cs.pitt.edu/News/PressReleases
 		Accolades https://cs.pitt.edu/News/Accolades
 		Outreach News https://cs.pitt.edu/News/OutreachNews
 		Departmental News https://cs.pitt.edu/News/DepartmentalNews
 		<same as on home page, but in full page form>
-	Events https://cs.pitt.edu/events
+	Events https://cs.pitt.edu/events EVTS
 		<calendar of all events, color coded>
 			<links to event page, but not much there>
 		Technical Talks https://cs.pitt.edu/events/TechnicalTalks
@@ -222,7 +222,7 @@ News and Events
 	Photo Gallery
 		<photo dumps of varius albums>
 	
-Outreach https://cs.pitt.edu/outreach
+Outreach https://cs.pitt.edu/outreach	OUTREACH
 	<links to sub-areas>
 	Women/Diversity https://cs.pitt.edu/outreach/WomenDiversityInitiatives
 		WiCS, She Innovates, etc info
