@@ -402,57 +402,50 @@ ol.breadcrumb{
 		padding-top: 2vh;			
 	}
 
-	
 	#info-footer{
-	
-	
+		display: flex;
+		flex-direction: column;
+		height: 33rem;
+		background-color: #cdb87c;
 	}
-
+	
 	
 	#info-img{
 		border-style: none;
-		height: 32rem;
-		margin-top: 0rem;
-		margin-left: 4rem;
+		margin-top: 5vh;
+		margin-left: 0;
+		height: 100vh;
+		width: 100vw;
 	}
 
 	#info-dialog{
 		text-align: center;
-		margin-top: 6rem;
+		margin-top: 0;
 		padding-left: 0rem;
-		padding-right: 5rem;
+		padding-right: 0;
 	}
 
 	#info-dialog h2{
 		color: white;
-		font-size: 2.5rem;
-		padding-left: 5rem;
-		padding-right: 5rem;
+		font-size: x-large;
+		padding-left: 7vw;
+		padding-right: 7vw;
 
 	}
 
 	#info-dialog p{
-		margin-top: 1rem;
+		margin-top: 0rem;
 		font-weight: 500;
-		font-size: 1.2rem;
+		font-size: medium;
 		color: #1b3561;
-		padding-left: 10rem;
-		padding-right: 10rem;
+		padding-left: 10vw;
+		padding-right: 10vw;
 	}
 
 	#info-dialog button{
-		background-color: #1b3561;
-		border-width: medium;
-		border-radius: 10rem;
-		border-color: white;
-		color: white;
-		font-size: x-large;
-		font-weight: 500;
-		padding-left: 1rem;
-		padding-right: 1rem;
-		padding-bottom: .25rem;
-		border-style: solid;
-		margin-top: 2rem;
+		font-size: larger;
+		margin-top: 0rem;
+		margin-bottom: 5vh;
 	}
 
 	#breadcrumb-container{
@@ -466,7 +459,8 @@ ol.breadcrumb{
 		/*need more margin on the left of links to accomodate the numbers*/
 		padding: 0 10px 0 55px;
 	}
-
+	
+	
 }
 		
 		
