@@ -2,6 +2,12 @@
                                GRADUATE PAGE
 ********************************************************************************/
 
+#input_bar {
+	margin-left: 3vw;
+	margin-bottom: 2vw;
+
+}
+
 #nav-grad{
 	margin-left: 4.5rem;
 }
@@ -47,7 +53,7 @@
 
 }
 
-#nav-grad ul#inner-nav li.inner-item a:hover, #nav-grad ul#inner-nav li.inner-item a:active{
+#nav-grad ul#inner-nav li.inner-item a:hover, #nav-grad ul#inner-nav li.inner-item a.active{
 	background: #666;
 }
 
@@ -338,7 +344,7 @@ ol.breadcrumb{
                                DYNAMIC RESIZING
 ********************************************************************************/
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 	.grad-heading{
 		font-weight: 700;
 		color: #1b3561;
@@ -367,7 +373,9 @@ ol.breadcrumb{
 		padding-bottom: .5rem !important;
 	}
 
-
+	.featurette-divider {
+		margin: 2vh 4vw 3vh 4vw;
+	}
 	
 	#img-container{	height: 32vh;}
 
@@ -462,7 +470,233 @@ ol.breadcrumb{
 	
 	
 }
+
+
+@media screen and (max-width: 992px) and (min-width: 568px){
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 90vw;
+		margin-left: 5vw;
+		margin-top: 1vh;
+	}
+	
+	#info-footer{
+		display: flex;
+		flex-direction: row;
+		height: 70vh;
+		background-color: #cdb87c;
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 5vh;
+		margin-left: 0;
+		height: 60vh;
+		width: 100vw;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0vh;
+		margin-left: -10vw;
+		padding-top: 10vh
+	}
+
+	
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 568px) and (max-aspect-ratio: 17/10){
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 90vw;
+		margin-left: 5vw;
+		margin-top: 1vh;
+	}
+	
+	#info-footer{
+		display: flex;
+		flex-direction: column;
+		height: 70vh;
+		background-color: #cdb87c;	
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 0vh;
+		margin-left: 20vw;
+		margin-bottom: -10vh;
+		height: 60vh;
+		width: 60vw;
+		padding-top: 2vh;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0vh;
+		margin-left: 0;
+		padding-top: 10vh;
+		margin-bottom: 8vh;
+	}
+
+	#info-dialog h2{
+		color: white;
+		font-size: x-large;
+		padding-left: 30vw;
+		padding-right: 30vw;
+
+	}
+
+	#info-dialog p{
+		margin-top: 0rem;
+		font-weight: 500;
+		font-size: medium;
+		color: #1b3561;
+		padding-left: 30vw;
+		padding-right: 30vw;
+	}
+
+	#info-dialog button{
+		font-size: larger;
+		margin-top: -1vh;
+		margin-bottom: 0vh;
+	}
+
+}
+
+
+
+/*
+@media screen and (max-width: 992px) and (min-width: 568px){
+	.grad-heading{
+		font-weight: 700;
+		color: #1b3561;
+		margin-left: 0;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
 		
+	#content-section{
+		margin-left: 0;
+		margin-top: -1rem;
+		margin-right: 0;
+		width:	100vw;
+	}
+
+	#nav-grad{
+		margin-left: 20vw;
+		margin-right: 20vw;
+		margin-bottom: 10vh;
+	}
+	
+	.featurette-divider {
+		margin: 2vh 4vw 3vh 4vw;
+	}
+	
+	.outer-grad-link {
+		padding: 0 !important;
+		text-align: center;
+		padding-top: .5rem !important;
+		padding-bottom: .5rem !important;
+	}
+
+
+	
+	#img-container{	height: 32vh;}
+
+	#top-img-grad{ height: 45vh;}
+
+	#content-img{
+		float: none;
+		margin: 0;
+		padding: 1vh 1vw 1vh 1vw;
+		border-width: .5vw;
+		width: 80vw;
+		margin-top:	4vh;
+		margin-bottom: 4vh;
+		margin-left: 9vw;
+		margin-right: 9vw;
+	}
+	
+	#content-img>img{
+		border-style: none;
+		width: 77vw;
+		margin: 0;
+	}
+
+	#content-section p{
+		margin: 0;
+		margin-left: 6vw;
+		margin-right: 6vw;
+		margin-bottom: 6vh;
+	}
+	
+	#content-section p#first-p{
+		padding-top: 2vh;			
+	}
+
+	#info-footer{
+		display: flex;
+		flex-direction: column;
+		height: 33rem;
+		background-color: #cdb87c;
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 5vh;
+		margin-left: 0;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0;
+		padding-left: 0rem;
+		padding-right: 0;
+	}
+
+	#info-dialog h2{
+		color: white;
+		font-size: x-large;
+		padding-left: 7vw;
+		padding-right: 7vw;
+
+	}
+
+	#info-dialog p{
+		margin-top: 0rem;
+		font-weight: 500;
+		font-size: medium;
+		color: #1b3561;
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+
+	#info-dialog button{
+		font-size: larger;
+		margin-top: 0rem;
+		margin-bottom: 5vh;
+	}
+
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 90vw;
+		margin-left: 3vw;
+		margin-top: 1vh;
+	}
+
+	.breadcrumb a {
+		padding: 0 10px 0 55px;
+	}
+	
+	
+}
+*/		
 		
 		
 						
