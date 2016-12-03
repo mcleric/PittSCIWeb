@@ -1,7 +1,9 @@
 /*******************************************************************************
                                GRADUATE PAGE
 ********************************************************************************/
-
+li.outer-item, li.inner-item{
+	margin-left: 0;
+}
 #input_bar {
 	margin-left: 3vw;
 	margin-bottom: 2vw;
@@ -286,26 +288,7 @@ ol.breadcrumb{
 .breadcrumb a:last-child:after {
 	content: none;
 }
-/*we will use the :before element to show numbers*/
-/*
-.breadcrumb a:before{
-	content: counter(flag);
-	counter-increment: flag;
-	
-	text-align: center;
-	border-radius: 100%;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	margin: 8px 0;
-	position: absolute;
-	top: 0;
-	left: 30px;
-	background: #1c2f6d;
-	background: linear-gradient(#1c2f6d, #0e1735);
-	font-weight: bold;
-}
-*/
+
 .breadcrumb a span{
 	
 	/*some styles now*/
@@ -372,7 +355,13 @@ ol.breadcrumb{
 		padding-top: .5rem !important;
 		padding-bottom: .5rem !important;
 	}
-
+	
+	#nav-grad ul#inner-nav li.inner-item a{
+		padding: 0 !important;
+		text-align: center;
+		
+	}	
+	
 	.featurette-divider {
 		margin: 2vh 4vw 3vh 4vw;
 	}

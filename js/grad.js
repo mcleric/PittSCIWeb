@@ -20,6 +20,27 @@ $(document).ready(function(){
 	
 });
 
+$('#input_bar').on('input', function() {
+	var input = $('#input_bar')[0].value;
+	input = input.toUpperCase();
+	var courses = $('#main h4 > a');
+	for(i=0; i<courses.length; i++) {
+		var container = $(courses[i].parentNode.parentNode.parentNode);
+		var course_name = $(courses[i])[0].innerHTML;
+		course_name = course_name.toUpperCase();
+		if(course_name.includes(input)) {
+			container.show();
+		}else{
+			container.hide();
+		}
+	
+	
+	
+	}
+
+});
+
+
 function adjCrumbs(list){
 	var total_len = 0;
 	var items = list.children();
