@@ -1,5 +1,5 @@
 /********************************************************************
-                                GENERAL
+                              GENERAL
 ********************************************************************/
 
 /* Prevent scroll on narrow devices */
@@ -16,123 +16,24 @@ body {
   background: radial-gradient(ellipse at center, rgba(254,254,254,1) 0%, rgba(219,219,219,1) 85%, rgba(226,226,226,1) 100%);
 }
 
+/* Toggle to outline all page elements for easier positioning */
+
 /*body * {
   border: 1px solid #FFF;
 }*/
 
+
 /********************************************************************
-                            TOP NAVIGATION
+                          CAROUSEL SECTION
 ********************************************************************/
 
-/* Basic navbar color scheme and effects */
-
-#nav-top {
-  background: linear-gradient(to bottom, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
-}
-
-/* Pitt logo container */
-
-.navbar-logo {
-  padding-top: 0.1rem;
-}
-
-/* Pitt seal */
-
-.seal {
-  margin-top: 0.05rem;
-  width: 2.75rem;
-  height: 2.75rem;
-}
-
-/* School and department text */
-
-.navbar-brand {
-  color: #FFF !important;
-  font-family: 'Slabo 27px', serif;
-  text-transform: none !important;
-  font-size: 1.4rem;
-  padding-left: 0.75rem;
-  padding-top: 0.5rem;
-}
-
-#navbarResponsive {
-  float: right;
-}
-
-/* Container that holds responsive menu bar */
-
-.menu-container {
-  margin-top: 1rem;
-  height: 1.4rem;
-  width: 1.75rem;
-}
-
-/* Responsive menu bar */
-
-.hamburger {
-  position: absolute;
-  cursor: pointer;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-}
-
-.hamburger div {
-  position: absolute;
-   left: 0;
-  display: block;
-  width: 1.5rem;
-  height: 0.2rem;
-  border-radius: 9px;
-  background: #FFF;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-}
-
-.hamburger div:nth-child(1) {
-  top: 0;
-}
-
-.hamburger div:nth-child(2), .hamburger div:nth-child(3) {
-  top: 0.4rem;
-}
-
-.hamburger div:nth-child(4) {
-  top: 0.8rem;
-}
-
-.hamburger.open div:nth-child(1), .hamburger.open div:nth-child(4) {
-  top: 0.4rem;
-  left: 25%;
-  width: 0%;
-}
-
-.hamburger.open div:nth-child(2) {
-  background: #FFF;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.hamburger.open div:nth-child(3) {
-  background: #FFF;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-/*******************************************************************************
-                            HOMEPAGE (INDEX.HTML)
-********************************************************************************/
+/* Carousel */
 
 .carousel {
   height: 65vh;
 }
+
+/* Container that holds each carousel slide heading and button */
 
 .carousel-caption {
   z-index: 10;
@@ -144,7 +45,6 @@ body {
   max-height: 9rem;
   margin: 0 auto;
   text-align:center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .carousel-caption h1 {
@@ -163,26 +63,32 @@ body {
   min-width: 100%;
 }
 
+/* Filter for the carousel to darken borders to draw eyes into image */
+
 .shadow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0px 0px 120px 0px rgba(0,0,0,1);
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 120px 0px rgba(0,0,0,1);
+  top: 0;
+  left: 0;
 }
 
 /********************************************************************
                           PEOPLE SECTION
 ********************************************************************/
 
+/* Holds undergrad, grad, and faculty sections for ease of access */
+
 .people .col-lg-4 {
   text-align: center;
   padding-top: 3rem;
 }
 
+/* Generic circle to hold people section images */
+
 .img-circle {
-  border: solid 2px #FFF;
+  border: solid 4px #FFF;
   border-radius: 10rem;
   height: 13rem;
   width: 13rem;
@@ -211,6 +117,8 @@ body {
                                 NEWS SECTION
 ********************************************************************************/
 
+/* Container to hold a featured news story, image, and details */
+
 .featurette-divider {
   margin: 2rem 4rem 3rem 4rem;
 }
@@ -232,36 +140,22 @@ body {
   text-decoration: none;
 }
 
+/* Featured news image */
+
 .featured-news-container img {
   height: 100%;
   width: 90%;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
-  border: solid 2px #FFF;
-  border-radius: 0.25rem;
+  border: solid 4px #FFF;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.news-item {
-  display: flex;
-  flex-flow: row;
-  margin-bottom: 1rem;
 }
 
 .news-info {
   display: flex;
   flex-flow: column;
   list-style: none;
-  padding-left: 1rem;
-}
-
-.recent-news-image {
-  background: #AAA;
-  border: solid 2px rgba(62,70,97,1);
-  border-radius: 0.25rem;
-  width: 4.5rem;
-  height: 4.5rem;
-  flex-shrink: 0;
 }
 
 .news-info a {
@@ -281,11 +175,17 @@ body {
 }
 
 #news-btn {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
-#vertical-separator {
+/* Vertical featurette dividers */
+
+#vertical-separator-left {
   border-left: 1px solid #DDD;
+}
+
+#vertical-separator-right {
+  border-right: 1px solid #DDD;
 }
 
 #recent-news-heading {
@@ -293,12 +193,14 @@ body {
 }
 
 .news {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 /********************************************************************
                        FEATURED EVENT SECTION
 ********************************************************************/
+
+/* Container that holds a featured events info and large image */
 
 .events-container {
   margin-bottom: 2.5rem;
@@ -312,13 +214,15 @@ body {
   text-decoration: none;
 }
 
+/* Image of featured event */
+
 .featured-event-image {
   height: 100%;
   width: 90%;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
-  border: solid 2px #FFF;
-  border-radius: 0.25rem;
+  border: solid 4px #FFF;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -330,9 +234,13 @@ body {
                       UPCOMING EVENTS SECTION
 ********************************************************************/
 
+/* Container that holds upcoming events section list and calendar icons */
+
 #upcoming-event-heading {
   margin-left: 2.5rem;
 }
+
+/* List of upcoming events and their date, time, and location */
 
 .event-list li {
   list-style: none;
@@ -354,6 +262,8 @@ body {
   padding-left: 1rem;
 }
 
+/* Calendar date icon */
+
 .calendar {
   display: flex;
   flex-flow: column;
@@ -362,7 +272,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 3.5rem;
   border: solid 2px rgba(62,70,97,1);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .calendar-top {
@@ -378,141 +288,14 @@ body {
   margin-top: 0.75rem;
 }
 
-/********************************************************************
-                            FOOTER SECTION
-********************************************************************/
 
-.footer-container {
-  background: #EEE;
-  text-align: center;
-  font-size: 0.9rem;
-  border-top: solid 1px #DDD;
-  height: 20rem;
-}
-
-footer ul {
-  text-align: left;
-	left: 0;
-	padding: 0;
-  list-style-type: none;
-}
-
-footer .row {
-  padding-top: 2rem;
-	padding-bottom: 3rem;
-}
-
-#tweet {
-  color: rgb(70, 154, 233) !important;
-  margin-right: 0.5rem;
-}
-
-#tweet-heading {
-  text-align: center;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-	margin-right: 2.5em;
-  width: 85%;
-}
-
-.twitter-feed {
-  display: flex;
-  flex-flow: column;
-	margin-right: 2.5rem;
-  /*background: #333;*/
-  background: linear-gradient(135deg, rgba(17,17,17,1) 0%, rgba(51,51,51,1) 35%, rgba(68,68,68,1) 78%, rgba(85,85,85,1) 100%);
-  color: #FFF !important;
-  padding: 1rem 1rem 0rem 1rem;
-  border: 2px solid #FFF;
-  border-radius: 0.25rem;
-  list-style: none;
-  text-decoration: none;
-  font-size: 0.7rem;
-  height: 13rem;
-  width: 88%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /*box-shadow: 0px 0px 10px 0px rgba(107,163,227,1);*/
-}
-
-.twitter-feed-item {
-	display: flex;
-	flex-flow: row;
-}
-
-.twitter-feed-item span {
-  margin-right: 0.05rem;
-}
-
-.twitter-icon {
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid #FFF;
-  border-radius: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.twitter-feed li {
-  margin-bottom: 0.75rem;
-}
-
-#contact-heading {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact {
-  list-style: none;
-  font-size: 0.7rem;
-  text-align: center;
-}
-
-.contact a:hover {
-  text-decoration: none;
-}
-
-footer span {
-	margin-right: -0.30rem;
-}
-
-.directions {
-  text-align: center;
-  margin-left: 2rem;
-  font-size: 1.25rem;
-  margin-bottom: 2.5rem;
-}
-
-#map {
-  height: 15rem;
-  width: 85%;
-  margin-top: 0.25rem;
-  margin-left: 2.5rem;
-  border: solid 2px #FFF;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/* Basic vertical featurette dividers for footer */
 
 #vertical-separators {
   border-left: solid 1px #DDD;
   border-right: solid 1px #DDD;
 }
 
-/********************************************************************
-                        BOTTOM NAVIGATION
-********************************************************************/
-
-/* Basic navbar color scheme and effects */
-
-#nav-bottom {
-  background: linear-gradient(to top, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
-  height: 4rem;
-}
-
-#nav-social {
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  font-size: 1.6rem;
-}
 
 /********************************************************************
                         GENERAL NAVIGATION
@@ -531,10 +314,10 @@ footer span {
 }
 
 /********************************************************************
-                      HOMEPAGE @MEDIA 480PX
+              RESPONSIVE OPTIONS FOR TABLETS / MOBILE
 ********************************************************************/
 
-/* Adjusts content sizing for mobile displays */
+/* Adjusts content sizing for tablet and mobile displays */
 
 @media screen and (max-width: 992px) {
 
@@ -571,7 +354,7 @@ footer span {
   }
 
   .img-circle {
-	  height: 13rem;
+    height: 13rem;
 	  width: 13rem;
   }
 
@@ -590,11 +373,7 @@ footer span {
   }
 
   .news-item {
-    width: 95%;
-  }
-
-  .news {
-    padding-bottom: 1rem;
+    width: 89%;
   }
 
   .featured-news-container img {
@@ -637,45 +416,4 @@ footer span {
     width: 74%;
     margin-top: -0.5rem;
   }
-
-	.footer-container {
-		height: auto;
-    background: none;
-	}
-
-  #tweet-heading {
-    text-align: center;
-	  margin-right: 0;
-	  margin-bottom: 1.5rem;
-	  margin-top: 1rem;
-  }
-
-  .twitter-feed {
-	  width: 80%;
-	  height: auto;
-    margin-bottom: 3.25rem;
-	  margin-right: 0;
-  }
-
-  .twitter-feed li {
-    margin-bottom: 1rem;
-  }
-
-	.directions {
-		margin-left: 0;
-	}
-
-  #map {
-    margin-top: -0.75rem;
-    margin-left: 0;
-    height: 20rem;
-    width: 80%;
-  }
-
-  #nav-social {
-    line-height: 0;
-    margin-top:  -0.15rem;
-		font-size: 1.8rem;
-		width: 100%;
-	}
 }

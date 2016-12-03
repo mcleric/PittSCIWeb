@@ -98,32 +98,34 @@
 		
 					<!-- a simple div with some links -->
 			<div id="img-container">
-			<img id="top-img" src="img/dope_library.jpeg">
+					<img id="top-img-grad" src="img/dope_library.jpeg">
 			</div>
 			
 			<div id="breadcrumb-container">
 				<ol class="breadcrumb">
-					<a href="index.html">CS Home</a>
-					<a href="grad.html" class="active">Graduate</a>
+					<a href="index.html"><span></span>CS Home</a>
+					<a href="grad.html" class="active"><span></span>Graduate</a>
 				</ol>
 			</div>
+			
+			<hr class="featurette-divider">
 			<!-- Prefixfree -->
 			
 			<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
 			
 		<div id="main-body">
-		
+			
 		
 			<div id="nav-grad">
-				<ul class="nav nav-pills nav-stacked">
-				  <li>
-					<a class="nav-link nav-link-grad active" href="grad.html">Graduate</a>
+				<ul id="outer-nav" class="nav nav-pills nav-stacked">
+				  <li class="outer-item">
+					<a class="nav-link outer-grad-link active" href="grad.html">Graduate</a>
 				  </li>
-				  <li>
-					<a class="nav-link nav-link-grad" href="grad_admiss.html">Admissions</a>
+				  <li class="outer-item">
+					<a class="nav-link outer-grad-link" href="grad_admiss.html">Admissions</a>
 				  </li>
-				  <li>
-					<a class="nav-link nav-link-grad" href="#">Academics</a>
+				  <li class="outer-item">
+					<a class="nav-link outer-grad-link" href="#">Academics</a>
 				  </li>
 				</ul>
 			</div>
@@ -134,7 +136,7 @@
 				<h1 class="grad-heading">Graduate Program</h1>
 				
 				<div  id="content-img"><img src="img/students1.jpg"></div>
-				<p>
+				<p id="first-p">
 					The faculty of the Department of Computer Science are committed to high quality graduate education. 
 					The broad scope of their research enables them to convey to graduate students a comprehensive, 
 					state-of-the-art understanding of computer science and its application to a wide range of other disciplines. 
@@ -163,7 +165,7 @@
 		</div>
 
 	
-
+		
 <!-- ================================================================
                            FOOTER SECTION
 ================================================================= -->
@@ -300,6 +302,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/grad.js"></script>
   </body>
 
 </html>

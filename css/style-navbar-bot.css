@@ -1,0 +1,36 @@
+/********************************************************************
+                        BOTTOM NAVIGATION
+********************************************************************/
+
+/* Basic navbar color scheme and effects */
+
+#nav-bottom {
+  background: linear-gradient(to top, rgba(18,30,70,1) 0%, rgba(62,70,97,1) 100%);
+  height: 4rem;
+}
+
+/* Social icon format */
+
+#nav-social {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 1.6rem;
+}
+
+
+/********************************************************************
+                        GENERAL NAVIGATION
+********************************************************************/
+
+/* General navigation fonts, effects, and positioning */
+
+.nav-link {
+  color: #FFF !important;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.3rem;
+}
+
+.nav-item a:hover {
+  color: rgb(202, 203, 154) !important;
+}

@@ -35,12 +35,12 @@
 ================================================================= -->
 
 	
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.css" rel="stylesheet" media="screen">
 	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/00cb17220a.js"></script>
 	
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style-navpage.css">
 
   </head>
 
@@ -104,66 +104,65 @@
 ================================================================= -->
 
 
-
     <hr class="featurette-divider">
 
 <div class ="row navigation-tabs">
 
 	<div class="col-lg-2"></div>
 	<ul class="nav nav-pills nav-stacked col-lg-1">
-		<li class="nav-item">
-			<a class="nav-link active" href="#tab_a" data-toggle="pill">Graduate</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#tab_b" data-toggle="pill">Admissions</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#tab_c" data-toggle="pill">Programs</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#tab_d" data-toggle="pill">Research</a>
-		</li>
+		<li class="active"><a href="#tab_a" data-toggle="pill">Graduate</a></li>
+		<li><a href="#tab_b" data-toggle="pill">Admissions</a></li>
+		<li><a href="#tab_c" data-toggle="pill">Programs</a></li>
+		<li><a href="#tab_d" data-toggle="pill">Research</a></li>
 	</ul>
 	
-	<div class="tab-content col-lg-6">
+	<div class="tab-content">
         <div class="tab-pane active" id="tab_a">
-			<div class="tab-image col-lg-4">
-				<img class="img-circle" src="img/undergrad1.jpg" alt="Generic placeholder image" width="140" height="140">
+			<div class="col-lg-2">
+				<a href="#" class="">
+					<img class="img-circle" src="img/undergrad1.jpg" alt="Generic placeholder image" width="140" height="140">
+				</a>
 			</div>
-			<div class="tab-info col-lg-6">
-			  <h2>Graduate</h2>
+			<div class="col-lg-6">
+			  <h2>Graduate Programs at Pitt CS</h2>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			  <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Learn more &raquo;</a></p>
 			</div>
         </div>
         <div class="tab-pane" id="tab_b">
-            <div class="tab-image col-lg-4">
-				<img class="img-circle" src="img/grad1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <div class="col-lg-2">
+				<a href="#" class="">
+					<img class="img-circle" src="img/grad1.jpg" alt="Generic placeholder image" width="140" height="140">
+				</a>
 			</div>
-			<div class="tab-info col-lg-6">
+			<div class="col-lg-6">
 			  <h2>Admissions</h2>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			  <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Learn more &raquo;</a></p>
+			  <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Apply now &raquo;</a></p>
 			</div>
         </div>
         <div class="tab-pane" id="tab_c">
-            <div class="tab-image col-lg-4">
-				<img class="img-circle" src="img/coding.jpg" alt="Generic placeholder image" width="140" height="140">
+            <div class="col-lg-2">
+				<a href="#" class="">
+					<img class="img-circle" src="img/coding.jpg" alt="Generic placeholder image" width="140" height="140">
+				</a>
 			</div>
-			<div class="tab-info col-lg-6">
+			<div class="col-lg-6">
 			  <h2>Programs</h2>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			  <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Learn more &raquo;</a></p>
 			</div>
         </div>
         <div class="tab-pane" id="tab_d">
-            <div class="tab-image col-lg-4">
-				<img class="img-circle" src="img/faculty1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <div class="col-lg-2">
+				<a href="#" class="">
+					<img class="img-circle" src="img/faculty1.jpg" alt="Generic placeholder image" width="140" height="140">
+				</a>
 			</div>
-			<div class="tab-info col-lg-6">
+			<div class="col-lg-6">
 			  <h2>Research</h2>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			  <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Learn more &raquo;</a></p>
+			  <p><a class="btn btn-primary" id="news-btn" href="#" role="button">Explore &raquo;</a></p>
 			</div>
         </div>
 	</div><!-- tab content -->
@@ -422,6 +421,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
 
 
   </body>

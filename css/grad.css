@@ -1,68 +1,31 @@
 /*******************************************************************************
                                GRADUATE PAGE
 ********************************************************************************/
-@media screen and (max-width: 992px){
-
-	
-
-
-
-
-
-
-
+li.outer-item, li.inner-item{
+	margin-left: 0;
+}
+#input_bar {
+	margin-left: 3vw;
+	margin-bottom: 2vw;
 
 }
 
 #nav-grad{
 	margin-left: 4.5rem;
 }
-#nav-grad ul li a{
-	padding-right: 7.5rem;
-    border-top: solid .075rem;
-    border-bottom: solid .075rem;
-    border-color: #cacb9a;
-	font-size: larger;
-}
 
-/*
-#nav-grad ul li ul li a{
-	padding-right: 7.5rem;
-    border-top: solid .075rem;
-    border-bottom: solid .075rem;
-    border-color: #cacb9a;
-	font-size: larger;
-}
-*/
-#nav-grad ul li:first-child a{
+#nav-grad ul li:first-child a.outer-grad-link{
 	border-top: none;
 }
-#nav-grad ul li:last-child a{
+#nav-grad ul li:last-child a.outer-grad-link{
 	margin-bottom: 0rem;
 	border-bottom: none;
 }
-#nav-grad ul li	 a{
-	margin: 0rem;
-}
+
 #nav-grad ul{
 	background-color: #cacb9a;
 }
 
-#internal{
-	
-}
-
-#internal ul{
-
-}
-
-#internal ul li{
-
-}
-
-#internal ul li a{
-
-}
 
 .grad-heading{
 	font-weight: 700;
@@ -71,27 +34,54 @@
     margin-bottom: 1rem;
 }
 
-.nav-link-grad {
-  display: inline-block;
-  background: linear-gradient(#666, #333);
-  height: 3rem;
-  
-  /*linear-gradient(to right, #3e4661, #5a658c);*/
-  
-  
+.outer-grad-link {
+	background: linear-gradient(to left, #2a46a2, #152351);
+	height: 3rem;
+	padding-right: 7.5rem !important;
+	padding-top : .5rem !important;
+	padding-bottom: .5rem !important;
+	border-top: solid .075rem;
+	border-bottom: solid .075rem;
+	border-color: #cacb9a;
+	font-size: larger;
+	margin: 0rem;
+   
 }
 
-.nav-link-grad.active, .nav-link-grad:hover{
+.outer-grad-link.active, .outer-grad-link:hover{
 	cursor: pointer;
-	background: linear-gradient(#333, #000);
-	/*linear-gradient(to right, #121e46, #253d8e);*/
+	color: rgb(202, 203, 154) !important;
+	background: linear-gradient(to right, #152351, #000);
+
 }
 
+#nav-grad ul#inner-nav li.inner-item a:hover, #nav-grad ul#inner-nav li.inner-item a.active{
+	background: #666;
+}
+
+#nav-grad ul#inner-nav li.inner-item a{
+	background: #999;
+    height: 1.75rem;
+    margin: 0rem;
+    padding-right: 7.5rem !important;
+	padding-left : 2rem !important;
+    padding-top: .0rem !important;
+    padding-bottom: .0rem !important;
+    /*border-top: solid .075rem;*/
+    border-bottom: solid .075rem;
+    border-color: #cacb9a;
+    font-size: medium;
+    
+	
+
+}
 #breadcrumb-container{
-	border-bottom-style: double;
-    border-bottom-width: .25rem;
-    border-bottom-color: gray;
-    margin: 0rem 3.5rem 0rem 3.5rem;
+	margin: 0rem 0rem 0rem 0rem;
+	width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+	margin-top: 2vh;
+	margin-bottom: -2vh;
 }
 
 #content-section{
@@ -183,13 +173,18 @@
 }
 
 #img-container{
-	height: 16rem;
-	overflow:hidden;
+	height: 45vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
 }
 
+
 #top-img-grad{
-	min-width: 100%;
-	height: 24rem;
+	min-width: 100vw;
+    height: 67vh;
+	flex: none;
 }
 
 #top-img-admiss{
@@ -198,136 +193,499 @@
 
 
 /*custom font*/
-		@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
 
-		/* * {margin: 0; padding: 0;} 
+body > .breadcrumb{
+	text-align: center;
+	font-family: 'Merriweather Sans', arial, verdana;
+}
 
-		html, body {min-height: 100%;}
-		*/
-		body > .breadcrumb{
-			text-align: center;
-			/*padding-top: 100px;
-			background: #39425e;*/
-			font-family: 'Merriweather Sans', arial, verdana;
-		}
 
+
+ol.breadcrumb{
+	margin-top: .5rem;
+    margin-bottom: -.05rem;
+    /* margin-left: 1rem; */		
+}
+.breadcrumb {
+	/*centering*/
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	padding: .05%;
+	overflow: hidden;
+	border-radius: 5px;
+	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+	counter-reset: flag; 
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color: white;
+	/*need more margin on the left of links to accomodate the numbers*/
+	padding: 0 10px 0 60px;
+	background: #2a46a2;
+	background: linear-gradient(#2a46a2, #152351);
+	position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb a:first-child:before {
+	left: 14px;
+}
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+	padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover{
+	background: #152351;
+	background: linear-gradient(#152351, #000);
+	color: rgb(202, 203, 154) !important;
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #152351;
+	background: linear-gradient(135deg, #152351, #000);
+	
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .breadcrumb a */
+	width: 36px; 
+	height: 36px;
+	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	background: #2a46a2;
+	background: linear-gradient(135deg, #2a46a2, #152351);
+	/*stylish arrow design using box shadow*/
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	/*
+		5px - for rounded arrows and 
+		50px - to prevent hover glitches on the border created using shadows*/
+	border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+	content: none;
+}
+
+.breadcrumb a span{
+	
+	/*some styles now*/
+	text-align: center;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #1c2f6d;
+	background: linear-gradient(#1c2f6d, #0e1735);
+	font-weight: bold;
+}
+
+.breadcrumb a:first-child span{left: 14px;}
+
+
+.flat a, .flat a:after {
+	background: white;
+	color: black;
+	transition: all 0.5s;
+}
+.flat a:before {
+	background: white;
+	box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: #9EEB62;
+}
+
+/*******************************************************************************
+                               DYNAMIC RESIZING
+********************************************************************************/
+
+@media screen and (max-width: 992px) {
+	.grad-heading{
+		font-weight: 700;
+		color: #1b3561;
+		margin-left: 0;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+		
+	#content-section{
+		margin-left: 0;
+		margin-top: -1rem;
+		margin-right: 0;
+		width:	100vw;
+	}
+
+	#nav-grad{
+		margin-left: 20vw;
+		margin-right: 20vw;
+		margin-bottom: 10vh;
+	}
+	
+	.outer-grad-link {
+		padding: 0 !important;
+		text-align: center;
+		padding-top: .5rem !important;
+		padding-bottom: .5rem !important;
+	}
+	
+	#nav-grad ul#inner-nav li.inner-item a{
+		padding: 0 !important;
+		text-align: center;
+		
+	}	
+	
+	.featurette-divider {
+		margin: 2vh 4vw 3vh 4vw;
+	}
+	
+	#img-container{	height: 32vh;}
+
+	#top-img-grad{ height: 45vh;}
+
+	#content-img{
+		float: none;
+		margin: 0;
+		padding: 1vh 1vw 1vh 1vw;
+		border-width: .5vw;
+		width: 80vw;
+		margin-top:	4vh;
+		margin-bottom: 4vh;
+		margin-left: 9vw;
+		margin-right: 9vw;
+	}
+	
+	#content-img>img{
+		border-style: none;
+		width: 77vw;
+		margin: 0;
+	}
+
+	#content-section p{
+		margin: 0;
+		margin-left: 6vw;
+		margin-right: 6vw;
+		margin-bottom: 6vh;
+	}
+	
+	#content-section p#first-p{
+		padding-top: 2vh;			
+	}
+
+	#info-footer{
+		display: flex;
+		flex-direction: column;
+		height: 33rem;
+		background-color: #cdb87c;
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 5vh;
+		margin-left: 0;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0;
+		padding-left: 0rem;
+		padding-right: 0;
+	}
+
+	#info-dialog h2{
+		color: white;
+		font-size: x-large;
+		padding-left: 7vw;
+		padding-right: 7vw;
+
+	}
+
+	#info-dialog p{
+		margin-top: 0rem;
+		font-weight: 500;
+		font-size: medium;
+		color: #1b3561;
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+
+	#info-dialog button{
+		font-size: larger;
+		margin-top: 0rem;
+		margin-bottom: 5vh;
+	}
+
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 99vw;
+		margin-left: .5vw;
+		margin-right: .5vw;
+	}
+
+	.breadcrumb a {
+		/*need more margin on the left of links to accomodate the numbers*/
+		padding: 0 10px 0 55px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 568px){
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 90vw;
+		margin-left: 5vw;
+		margin-top: 1vh;
+	}
+	
+	#info-footer{
+		display: flex;
+		flex-direction: row;
+		height: 70vh;
+		background-color: #cdb87c;
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 5vh;
+		margin-left: 0;
+		height: 60vh;
+		width: 100vw;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0vh;
+		margin-left: -10vw;
+		padding-top: 10vh
+	}
+
+	
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 568px) and (max-aspect-ratio: 17/10){
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 90vw;
+		margin-left: 5vw;
+		margin-top: 1vh;
+	}
+	
+	#info-footer{
+		display: flex;
+		flex-direction: column;
+		height: 70vh;
+		background-color: #cdb87c;	
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 0vh;
+		margin-left: 20vw;
+		margin-bottom: -10vh;
+		height: 60vh;
+		width: 60vw;
+		padding-top: 2vh;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0vh;
+		margin-left: 0;
+		padding-top: 10vh;
+		margin-bottom: 8vh;
+	}
+
+	#info-dialog h2{
+		color: white;
+		font-size: x-large;
+		padding-left: 30vw;
+		padding-right: 30vw;
+
+	}
+
+	#info-dialog p{
+		margin-top: 0rem;
+		font-weight: 500;
+		font-size: medium;
+		color: #1b3561;
+		padding-left: 30vw;
+		padding-right: 30vw;
+	}
+
+	#info-dialog button{
+		font-size: larger;
+		margin-top: -1vh;
+		margin-bottom: 0vh;
+	}
+
+}
+
+
+
+/*
+@media screen and (max-width: 992px) and (min-width: 568px){
+	.grad-heading{
+		font-weight: 700;
+		color: #1b3561;
+		margin-left: 0;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+		
+	#content-section{
+		margin-left: 0;
+		margin-top: -1rem;
+		margin-right: 0;
+		width:	100vw;
+	}
+
+	#nav-grad{
+		margin-left: 20vw;
+		margin-right: 20vw;
+		margin-bottom: 10vh;
+	}
+	
+	.featurette-divider {
+		margin: 2vh 4vw 3vh 4vw;
+	}
+	
+	.outer-grad-link {
+		padding: 0 !important;
+		text-align: center;
+		padding-top: .5rem !important;
+		padding-bottom: .5rem !important;
+	}
+
+
+	
+	#img-container{	height: 32vh;}
+
+	#top-img-grad{ height: 45vh;}
+
+	#content-img{
+		float: none;
+		margin: 0;
+		padding: 1vh 1vw 1vh 1vw;
+		border-width: .5vw;
+		width: 80vw;
+		margin-top:	4vh;
+		margin-bottom: 4vh;
+		margin-left: 9vw;
+		margin-right: 9vw;
+	}
+	
+	#content-img>img{
+		border-style: none;
+		width: 77vw;
+		margin: 0;
+	}
+
+	#content-section p{
+		margin: 0;
+		margin-left: 6vw;
+		margin-right: 6vw;
+		margin-bottom: 6vh;
+	}
+	
+	#content-section p#first-p{
+		padding-top: 2vh;			
+	}
+
+	#info-footer{
+		display: flex;
+		flex-direction: column;
+		height: 33rem;
+		background-color: #cdb87c;
+	}
+	
+	
+	#info-img{
+		border-style: none;
+		margin-top: 5vh;
+		margin-left: 0;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	#info-dialog{
+		text-align: center;
+		margin-top: 0;
+		padding-left: 0rem;
+		padding-right: 0;
+	}
+
+	#info-dialog h2{
+		color: white;
+		font-size: x-large;
+		padding-left: 7vw;
+		padding-right: 7vw;
+
+	}
+
+	#info-dialog p{
+		margin-top: 0rem;
+		font-weight: 500;
+		font-size: medium;
+		color: #1b3561;
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+
+	#info-dialog button{
+		font-size: larger;
+		margin-top: 0rem;
+		margin-bottom: 5vh;
+	}
+
+	#breadcrumb-container{
+		margin: 0rem 0rem 0rem 0rem;
+		width: 90vw;
+		margin-left: 3vw;
+		margin-top: 1vh;
+	}
+
+	.breadcrumb a {
+		padding: 0 10px 0 55px;
+	}
+	
+	
+}
+*/		
 		
 		
-		ol.breadcrumb{
-			margin-top: .5rem;
-			margin-bottom: -.05rem;
-			margin-left: 1rem;			
-		}
-		.breadcrumb {
-			/*centering*/
-			display: inline-block;
-			box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
-			padding: .05%;
-			/*background-color: #39425e;*/
-			overflow: hidden;
-			border-radius: 5px;
-			/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
-			counter-reset: flag; 
-		}
-
-		.breadcrumb a {
-			text-decoration: none;
-			outline: none;
-			display: block;
-			float: left;
-			font-size: 12px;
-			line-height: 36px;
-			color: white;
-			/*need more margin on the left of links to accomodate the numbers*/
-			padding: 0 10px 0 60px;
-			background: #666;
-			background: linear-gradient(#666, #333);
-			position: relative;
-		}
-		/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
-		.breadcrumb a:first-child {
-			padding-left: 46px;
-			border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
-		}
-		.breadcrumb a:first-child:before {
-			left: 14px;
-		}
-		.breadcrumb a:last-child {
-			border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
-			padding-right: 20px;
-		}
-
-		/*hover/active styles*/
-		.breadcrumb a.active, .breadcrumb a:hover{
-			background: #333;
-			background: linear-gradient(#333, #000);
-		}
-		.breadcrumb a.active:after, .breadcrumb a:hover:after {
-			background: #333;
-			background: linear-gradient(135deg, #333, #000);
-		}
-
-		/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
-		.breadcrumb a:after {
-			content: '';
-			position: absolute;
-			top: 0; 
-			right: -18px; /*half of square's length*/
-			/*same dimension as the line-height of .breadcrumb a */
-			width: 36px; 
-			height: 36px;
-			/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
-			length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
-			if diagonal required = 1; length = 1/1.414 = 0.707*/
-			transform: scale(0.707) rotate(45deg);
-			/*we need to prevent the arrows from getting buried under the next link*/
-			z-index: 1;
-			/*background same as links but the gradient will be rotated to compensate with the transform applied*/
-			background: #666;
-			background: linear-gradient(135deg, #666, #333);
-			/*stylish arrow design using box shadow*/
-			box-shadow: 
-				2px -2px 0 2px rgba(0, 0, 0, 0.4), 
-				3px -3px 0 2px rgba(255, 255, 255, 0.1);
-			/*
-				5px - for rounded arrows and 
-				50px - to prevent hover glitches on the border created using shadows*/
-			border-radius: 0 5px 0 50px;
-		}
-		/*we dont need an arrow after the last link*/
-		.breadcrumb a:last-child:after {
-			content: none;
-		}
-		/*we will use the :before element to show numbers*/
-		.breadcrumb a:before {
-			content: counter(flag);
-			counter-increment: flag;
-			/*some styles now*/
-			text-align: center;
-			border-radius: 100%;
-			width: 20px;
-			height: 20px;
-			line-height: 20px;
-			margin: 8px 0;
-			position: absolute;
-			top: 0;
-			left: 30px;
-			background: #444;
-			background: linear-gradient(#444, #222);
-			font-weight: bold;
-		}
-
-
-		.flat a, .flat a:after {
-			background: white;
-			color: black;
-			transition: all 0.5s;
-		}
-		.flat a:before {
-			background: white;
-			box-shadow: 0 0 0 1px #ccc;
-		}
-		.flat a:hover, .flat a.active, 
-		.flat a:hover:after, .flat a.active:after{
-			background: #9EEB62;
-		}
+						
