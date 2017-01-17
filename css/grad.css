@@ -1,43 +1,50 @@
 /*******************************************************************************
                                GRADUATE PAGE
 ********************************************************************************/
-li.outer-item, li.inner-item{
-	margin-left: 0;
+
+#main-body {
+	display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+	margin-bottom: 2.5rem;	
 }
-#input_bar {
-	margin-left: 3vw;
-	margin-bottom: 2vw;
+
+/*Style for banner on graduate pages*/
+#img-container{
+	height: 21.8vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 
 }
+#top-img-grad{
+	min-width: 100vw;
+    height: 31.95vw;
+	flex: none;
+}
 
+
+/*Side-nav for all graduate pages -- Style for container/ul */
 #nav-grad{
-	margin-left: 4.5rem;
+	margin-left: 6.2vw;
 }
-
+#nav-grad ul{
+	background-color: #cacb9a;
+}
 #nav-grad ul li:first-child a.outer-grad-link{
 	border-top: none;
 }
 #nav-grad ul li:last-child a.outer-grad-link{
-	margin-bottom: 0rem;
+	margin-bottom: 0;
 	border-bottom: none;
 }
 
-#nav-grad ul{
-	background-color: #cacb9a;
-}
-
-
-.grad-heading{
-	font-weight: 700;
-    color: #1b3561;
-    margin-left: -1rem;
-    margin-bottom: 1rem;
-}
-
+/*Style for actual items within the side-nav*/
+/*outer-grad-link's are major content pages: Graduate landing, Admissions, Academics, etc*/ 
 .outer-grad-link {
 	background: linear-gradient(to left, #2a46a2, #152351);
 	height: 3rem;
-	padding-right: 7.5rem !important;
+	padding-right: 10.3vw !important;
 	padding-top : .5rem !important;
 	padding-bottom: .5rem !important;
 	border-top: solid .075rem;
@@ -47,35 +54,40 @@ li.outer-item, li.inner-item{
 	margin: 0rem;
    
 }
-
 .outer-grad-link.active, .outer-grad-link:hover{
 	cursor: pointer;
 	color: rgb(202, 203, 154) !important;
 	background: linear-gradient(to right, #152351, #000);
 
 }
-
+/*inner-nav items are more specific sub pages of the major content pages*/
 #nav-grad ul#inner-nav li.inner-item a:hover, #nav-grad ul#inner-nav li.inner-item a.active{
 	background: #666;
 }
-
 #nav-grad ul#inner-nav li.inner-item a{
 	background: #999;
     height: 1.75rem;
-    margin: 0rem;
-   padding-left : 2rem !important;
+    margin: 0;
+	padding-left : 2rem !important;
     padding-top: .2rem !important;
-    padding-bottom: .0rem !important;
-    /*border-top: solid .075rem;*/
+    padding-bottom: 0 !important;
     border-bottom: solid .075rem;
     border-color: #cacb9a;
     font-size: smaller;
-    
-	
-
 }
+
+
+/*Heading style on graduate pages*/
+.grad-heading{
+	font-weight: 700;
+    color: #1b3561;
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+}
+
+/*Style for container that holds breadcrumb ol*/
 #breadcrumb-container{
-	margin: 0rem 0rem 0rem 0rem;
+	margin: 0;
 	width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -83,114 +95,94 @@ li.outer-item, li.inner-item{
 	margin-bottom: -2vh;
 }
 
+/*Style for elements in the main content section of the page*/
 #content-section{
 
-	margin-left: 5rem;
+	margin-left: 6.9vw;
     margin-top: -1rem;
-	margin-right: 3.5rem;
+	margin-right: 4.9vw;
 }
-
 #content-pfix{
-	margin-right: 8rem;
+	
     margin-top: 2rem;
 }
-
 #content-img{
 	float: right;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+    margin-top: 1.25vw;
     border-style: solid;
-    padding: 1rem;
+    padding: 1.25vw;
     border-width: .1rem;
     border-color: #1b3561;
 }
 #content-img>img{
-	width: 25rem;
+	width: 31.3vw;
 	border-style: outset;
     border-width: medium;
 }
 
+
+/*all style for elements within the information footer section (below content, above true footer)
+	PROVIDES IMPORTANT INFORMATION FOR THE PARTICULAR SECTION OF THE SITE YOU ARE IN
+*/
 #info-footer{
 	display: flex;
 	flex-direction: row;
-	height: 33rem;
+	height: 41.4vw;
 	background-color:  #cdb87c;
 }
 
 #info-img{
 	border-style: none;
-    height: 32rem;
+    height: 41.4vw;
     margin-top: 0rem;
-    margin-left: 4rem;
+    margin-left: 5.5vw;
 }
-
 #info-dialog{
 	text-align: center;
-    margin-top: 6rem;
-    padding-left: 0rem;
-    padding-right: 5rem;
+    margin-top: 11.5vw;
+    padding-left: 0;
+    padding-right: 0;
 }
-
 #info-dialog h2{
 	color: white;
-    font-size: 2.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    font-size: 3.1vw;
+    padding-left: 7.8vw;
+    padding-right: 7.8vw;
 
 }
-
 #info-dialog p{
-	margin-top: 1rem;
+	margin-top: 1.25vw;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.51vw;
 	color: #1b3561;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
 }
-
 #info-dialog button{
 	background-color: #1b3561;
     border-width: medium;
     border-radius: 10rem;
     border-color: white;
     color: white;
-    font-size: x-large;
+    font-size: 1.85vw;
     font-weight: 500;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: .25rem;
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+    padding-bottom: .31vw;
     border-style: solid;
-	margin-top: 2rem;
-}
-
-#main-body {
-	display: flex;
-    flex-direction: row;
-    margin-top: 2.5rem;
-	margin-bottom: 2.5rem;	
-}
-
-#img-container{
-	height: 45vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-
+	margin-top: 0;
 }
 
 
-#top-img-grad{
-	min-width: 100vw;
-    height: 67vh;
-	flex: none;
-}
 
-#top-img-admiss{
-
-}
-
-
+/*	WHAT FOLLOWS IS AN ADAPTATION OF A BREADCRUMB IMPLEMENTATION FOUND ON CODEPEN
+	MODIFICATION HAD TO BE MADE IN ORDER TO HAVE THE STYLE MATCH UP WITH THE THEME FOR THE REST OF THE SITE
+	
+	ADDITIONALLY, HAD TO CREATE MY OWN CUSTOM COUNTER IN JS (RATHER THAN USING THE COUNTER-FLAG) TO ACCOUNT FOR
+	THE POSSIBLE REORGANIZATION OF THE BREADCRUMBS INTO MULTIPLE OL'S DURING RESIZE
+*/	
 /*custom font*/
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
 
@@ -198,8 +190,6 @@ body > .breadcrumb{
 	text-align: center;
 	font-family: 'Merriweather Sans', arial, verdana;
 }
-
-
 
 ol.breadcrumb{
 	margin-top: .5rem;
@@ -213,8 +203,7 @@ ol.breadcrumb{
 	padding: .05%;
 	overflow: hidden;
 	border-radius: 5px;
-	/*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
-	counter-reset: flag; 
+	
 }
 
 .breadcrumb a {
@@ -243,7 +232,6 @@ ol.breadcrumb{
 	border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
 	padding-right: 20px;
 }
-
 /*hover/active styles*/
 .breadcrumb a.active, .breadcrumb a:hover{
 	background: #152351;
@@ -255,7 +243,6 @@ ol.breadcrumb{
 	background: linear-gradient(135deg, #152351, #000);
 	
 }
-
 /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
 .breadcrumb a:after {
 	content: '';
@@ -288,6 +275,7 @@ ol.breadcrumb{
 	content: none;
 }
 
+/*breadcrumb a span will be holding the counter for each element of the breadcrumb ol*/
 .breadcrumb a span{
 	
 	/*some styles now*/
@@ -304,9 +292,7 @@ ol.breadcrumb{
 	background: linear-gradient(#1c2f6d, #0e1735);
 	font-weight: bold;
 }
-
 .breadcrumb a:first-child span{left: 14px;}
-
 
 .flat a, .flat a:after {
 	background: white;
@@ -327,21 +313,10 @@ ol.breadcrumb{
 ********************************************************************************/
 
 @media screen and (max-width: 992px) {
-	.grad-heading{
-		font-weight: 700;
-		color: #1b3561;
-		margin-left: 0;
-		margin-bottom: 1rem;
-		text-align: center;
+	.featurette-divider {
+		margin: 2vh 4vw 3vh 4vw;
 	}
-		
-	#content-section{
-		margin-left: 0;
-		margin-top: -1rem;
-		margin-right: 0;
-		width:	100vw;
-	}
-
+	
 	#nav-grad{
 		margin-left: 20vw;
 		margin-right: 20vw;
@@ -360,26 +335,30 @@ ol.breadcrumb{
 		padding-top: .2rem !important;
 		text-align: center;
 		
-	}	
-	
-	.featurette-divider {
-		margin: 2vh 4vw 3vh 4vw;
 	}
 	
-	#img-container{	height: 32vh;}
-
-	#top-img-grad{ height: 45vh;}
-
+	.grad-heading{
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	#content-section{
+		margin-left: 2vw;
+		margin-top: -1rem;
+		margin-right: 2vw;
+		width:	96vw;
+	}
+		
 	#content-img{
 		float: none;
 		margin: 0;
-		padding: 1vh 1vw 1vh 1vw;
+		padding: 1vw 1vw 1vw 1vw;
 		border-width: .5vw;
 		width: 80vw;
-		margin-top:	4vh;
-		margin-bottom: 4vh;
-		margin-left: 9vw;
-		margin-right: 9vw;
+		margin-top: 2.3vw;
+		margin-bottom: 2.3vw;
+		margin-left: 7vw;
+		margin-right: 7vw;
 	}
 	
 	#content-img>img{
@@ -399,52 +378,6 @@ ol.breadcrumb{
 		padding-top: 2vh;			
 	}
 
-	#info-footer{
-		display: flex;
-		flex-direction: column;
-		height: 33rem;
-		background-color: #cdb87c;
-	}
-	
-	
-	#info-img{
-		border-style: none;
-		margin-top: 5vh;
-		margin-left: 0;
-		height: 100vh;
-		width: 100vw;
-	}
-
-	#info-dialog{
-		text-align: center;
-		margin-top: 0;
-		padding-left: 0rem;
-		padding-right: 0;
-	}
-
-	#info-dialog h2{
-		color: white;
-		font-size: x-large;
-		padding-left: 7vw;
-		padding-right: 7vw;
-
-	}
-
-	#info-dialog p{
-		margin-top: 0rem;
-		font-weight: 500;
-		font-size: medium;
-		color: #1b3561;
-		padding-left: 10vw;
-		padding-right: 10vw;
-	}
-
-	#info-dialog button{
-		font-size: larger;
-		margin-top: 0rem;
-		margin-bottom: 5vh;
-	}
-
 	#breadcrumb-container{
 		margin: 0rem 0rem 0rem 0rem;
 		width: 99vw;
@@ -460,99 +393,72 @@ ol.breadcrumb{
 	
 }
 
-
-@media screen and (max-width: 992px) and (min-width: 568px){
-	#breadcrumb-container{
-		margin: 0rem 0rem 0rem 0rem;
-		width: 90vw;
-		margin-left: 5vw;
-		margin-top: 1vh;
+/*query to fix style when page gets really skewed in desktop*/
+@media screen and (max-width: 600px) and (max-aspect-ratio: 10/10){
+	
+	#info-img{
+		height: 33.4vw;
+		margin-top: 4vw;
 	}
+	#info-dialog{
+		margin-top: 10vw;
+	}
+	#info-dialog h2{
+		margin-bottom: .75vw;
+	}
+	#info-dialog p{
+		margin-bottom: .5vw;
+	}
+	
+}
+
+/*media queries specific to mobile devices in portrait*/
+@media screen and (max-width: 992px) and (orientation: portrait) and (max-aspect-ratio: 10/16){
+	#img-container{height: 23vh;}
+	#top-img-grad{height: 32vh;}
+
 	
 	#info-footer{
 		display: flex;
-		flex-direction: row;
-		height: 70vh;
-		background-color: #cdb87c;
+		flex-direction: column;
+		height: 80vh;
 	}
 	
-	
 	#info-img{
-		border-style: none;
 		margin-top: 5vh;
 		margin-left: 0;
-		height: 60vh;
+		height: 100vh;
 		width: 100vw;
 	}
 
 	#info-dialog{
 		text-align: center;
-		margin-top: 0vh;
-		margin-left: -10vw;
-		padding-top: 10vh
-	}
-
-	
-
-}
-
-@media screen and (max-width: 992px) and (min-width: 568px) and (max-aspect-ratio: 17/10){
-	#breadcrumb-container{
-		margin: 0rem 0rem 0rem 0rem;
-		width: 90vw;
-		margin-left: 5vw;
-		margin-top: 1vh;
-	}
-	
-	#info-footer{
-		display: flex;
-		flex-direction: column;
-		height: 70vh;
-		background-color: #cdb87c;	
-	}
-	
-	
-	#info-img{
-		border-style: none;
-		margin-top: 0vh;
-		margin-left: 20vw;
-		margin-bottom: -10vh;
-		height: 60vh;
-		width: 60vw;
-		padding-top: 2vh;
-	}
-
-	#info-dialog{
-		text-align: center;
-		margin-top: 0vh;
-		margin-left: 0;
-		padding-top: 10vh;
-		margin-bottom: 8vh;
+		margin-top: 0;
 	}
 
 	#info-dialog h2{
 		color: white;
 		font-size: x-large;
-		padding-left: 30vw;
-		padding-right: 30vw;
+		padding-left: 7vw;
+		padding-right: 7vw;
 
 	}
 
 	#info-dialog p{
-		margin-top: 0rem;
+		margin-top: 0r;
 		font-weight: 500;
 		font-size: medium;
 		color: #1b3561;
-		padding-left: 30vw;
-		padding-right: 30vw;
+		padding-left: 10vw;
+		padding-right: 10vw;
 	}
 
 	#info-dialog button{
 		font-size: larger;
-		margin-top: -1vh;
-		margin-bottom: 0vh;
+		margin-top: 0;
+		margin-bottom: 5vh;
 	}
 
-}
 
+}
 
