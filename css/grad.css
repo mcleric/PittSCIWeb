@@ -60,9 +60,15 @@
 	background: linear-gradient(to right, #152351, #000);
 
 }
+
+.inner-item{
+	display: none;
+}
+
 /*inner-nav items are more specific sub pages of the major content pages*/
 #nav-grad ul#inner-nav li.inner-item a:hover, #nav-grad ul#inner-nav li.inner-item a.active{
 	background: #666;
+	cursor: pointer;
 }
 #nav-grad ul#inner-nav li.inner-item a{
 	background: #999;
@@ -102,7 +108,7 @@
     margin-top: -1rem;
 	margin-right: 4.9vw;
 }
-#content-pfix{
+.content-pfix{
 	
     margin-top: 2rem;
 }
