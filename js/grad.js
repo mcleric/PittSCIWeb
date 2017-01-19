@@ -1,38 +1,80 @@
+/* 
+	Would have like to use AJAX/JSON for updates without page reloads,
+	but I wanted this website example to be able to be viewed without having to use
+	something like apache.  So I settled for using a JS object to hold the html.
+*/
+
+var data = 
+{
+	
+		"home":		{"breadcrumbs":"<ol class=\"breadcrumb\"><a href=\"index.html\"><span><\/span>CS Home<\/a><a class=\"home active\"><span><\/span>Graduate<\/a><\/ol>",
+					 "content":"<h1 class=\"grad-heading\">Graduate Program</h1><div  id=\"content-img\"><img src=\"img/students1.jpg\"></div><p id=\"first-p\">The faculty of the Department of Computer Science are committed to high quality graduate education. The broad scope of their research enables them to convey to graduate students a comprehensive, state-of-the-art understanding of computer science and its application to a wide range of other disciplines. A substantial level of sponsored research has been achieved thereby providing financial support for many graduate students in the form of research assistantships. </p><p class=\"content-pfix\">Our graduate students come from all corners of the globe and are able to pursue research topics in most areas within computer science and in many application areas within other disciplines. They are able to take advantage of the diverse faculty research collaborations with other departments and programs within the University such as the Learning Research and Development Center, the Intelligent Systems Program, the Telecommunications Program of the School of Information Sciences, the School of Engineering, and the School of Medicine.</p>",
+					 "footer":"<h2><b>Stay in Touch with Graduate Faculty</b></h2><p>Mentors & Advisors are here to lend a helping hand to our CS Graduate Students</p><button>Faculty Contacts</button>"
+		},
+		"admiss":	{"breadcrumbs":"<ol class=\"breadcrumb\"><a href=\"index.html\"><span><\/span>CS Home<\/a><a href=\"\" onclick=\"load_page('home'); return false;\"><span><\/span>Graduate<\/a><a class =\"admiss active\"><span><\/span>Admissions<\/a><\/ol>",
+					 "content":"<h1 class=\"grad-heading\">Graduate Admissions<\/h1><div  id=\"content-img\"><img src=\"img\/old_cs.jpg\"><\/div><p id=\"first-p\">An undergraduate degree is the minimal requirement for admission to graduate study.	Students are admitted to a graduate program and granted one of the following three types of status:<ol><li><b>Full graduate status:<\/b> when all admission requirements are met;<\/li><li><b>Provisional graduate status:<\/b> when some admission requirements are not (or inadequately) met;<\/li><li><b>Special graduate status:<\/b> to take specific graduate-level courses for one or more terms.<\/li><\/ol><\/p><\/br><p class=\"content-pfix\">All students, except those with temporary status, must apply either to the MS program or to the PhD program. Please note that an MS degree is not required in order to apply to the PhD program.  Students admitted to the MS program are eligible to complete the requirements for that degree. If they wish to transfer to the PhD program, they must apply to the admissions committee, which will make its decision based on the student's performance in the	MS program and on faculty recommendations.<\/p>",
+					 "footer":"<h2><b>Hail to Pitt!<\/b><\/h2><p>Take advantage of the diverse faculty research collaborations with other departments and programs.<\/p><button>Apply Now<\/button>"
+		},
+		"programs":	{"breadcrumbs":"<ol class=\"breadcrumb\"><a href=\"index.html\"><span><\/span>CS Home<\/a><a href=\"\" onclick=\"load_page('home'); return false;\"><span><\/span>Graduate<\/a><a href=\"\" onclick=\"load_page('admiss'); return false;\"><span><\/span>Admissions<\/a><a class = \"active\"><span><\/span>Degree & Program Options<\/a></ol>",
+					 "content":"<h1 class=\"grad-heading\">Degree & Program Options<\/h1><div  id=\"content-img\"><img src=\"img\/old_cs.jpg\"><\/div><\/br><p id=\"first-p\">The University of Pittsburgh Computer Science Department (CSD) has a graduate program of study that provides high quality, advanced training in the field of computer science. The program combines course work, supervised research, and independent research, none of which is sufficient alone. Degrees are awarded at both the Master's (MS) and Doctoral (PhD) levels. The purpose of the MS program is to prepare students for responsible jobs in industry. The purpose of the PhD program is to prepare students for a career of research and/or teaching in computer science.<\/p><h2>Full Graduate Status<\/h2><p class=\"content-pfix\">A student is admitted to a degree program with full graduate status if they have earned at least a BS degree, maintained a grade point average of at least B, and completed minimally a selection of courses in the following topical areas (the corresponding Pitt course numbers are indicated):<ol><li>In Computer Science, one course in each of:<\/li><ul><li>Discrete Structures (CS 0441)<\/li><li>Information/Data Structures (CS 0445)<\/li><li>Computer Organization/Assembly Language (CS 0447)<\/li><li>Theory (CS 1510 or 1511)<\/li><li>Languages (CS 1520 or 1621)<\/li><li>Systems (CS 1550 or 1651)<\/li><\/ul><li>In Mathematics, the following:<\/li><ul><li>The two-course calculus sequence (Math 0220, 0230)<\/li><li>A course in linear algebra (Math 1180 or 0280)<\/li><li>A course in probability and statistics, requiring calculus as prerequisite (Stat 1151, 1152)<\/li><\/ul><\/ol><\/p><h2>Provisional Status<\/h2><p class=\"content-pfix\">A student may be admitted to the MS degree program with provisional status if their qualifications are minimally deficient. Such students will be advanced to full graduate status after removal of the identified deficiencies. Students are expected to gain full graduate status by the time they complete 18 credits or, equivalently, one academic year of full-time graduate studies. Students with provisional status are not allowed to hold a teaching assistantship.<\/p><h2>Special Graduate Status<\/h2><p class=\"content-pfix\">This status allows a student to take graduate-level courses without enrolling in a graduate program. Special status is appropriate for a student who:<ul><li>Wants to take one or more specific courses for which they have the necessary qualifications;<\/li><li>Has deficiencies (in background or low grades);<\/li><li>Fails to meet the deadline for filing an official application for admission but has met all of the requirements for admission into a degree program with full graduate status.<\/li><\/ul>A student interested in applying for such special status must first obtain written permission from the faculty member teaching the course of interest. Students are then required to fill out & submit an application for admission to special graduate status. Further instructions can be found here.<\/p>",
+					 "footer":"<h2><b>Hail to Pitt!<\/b><\/h2><p>Take advantage of the diverse faculty research collaborations with other departments and programs.<\/p><button>Apply Now<\/button>"
+	
+		}
+
+};
+
 $(document).ready(function(){
+
+/*
+	Ideally there would be a conditional here that used sessionStorage so that once the page is loaded, a refresh doesn't 
+	necessarily redirect to graduate homepage. But as I stated above, I wanted this example to be able to be viewed without
+	something like apache
+*/
+	load_page('home');
+	
 	
 	//if window drops below 992px, need to move side nav to bottom of page
 	if(window.innerWidth <= 992){
 			shrinkWindow();
 	}
 	
+});
+
+function load_page(page_name){
+
+	//This is where AJAX would have been used
+	//instead, html is updated (based on page the user is on) via a JS object 
+	$('div#breadcrumb-container').html(data[page_name].breadcrumbs);
+	$('div#content-section').html(data[page_name].content);
+	$('div#info-dialog').html(data[page_name].footer);
+	
+	//call to numberCrumbs to properly number the generated breadcrumbs
 	numberCrumbs();
 	
+	//grab all links in side nav and ensure they are not displayed as active
 	
-});
+	//outer side nav links
+	$('a.outer-grad-link').removeClass('active');
+	//inner side nav links
+	$('a.nav-link-grad').removeClass('active');
+	
+	//if page being directed to is the graduate home page, hide all inner items
+	if(page_name == 'home'){
+		$('li.inner-item').slideUp(900);
+	}else{
+		//else we only hide inner items who are not going to be displayed here, and then display all additional relevant items
+		var tag = 'li.prime_' + page_name;
+		$('li.inner-item:not('+tag+')').slideUp(900, function(){
+			$(tag).slideDown(900);
+		});
+	}
+	
+	//add active class to relevant items
+	var name = "."+page_name;
+	$(name).addClass('active');
 
+}
 
-//this function dynamically depopulates and repopulates course offerings based on the text in the input_bar
-//best search criteria would be course name/number or instructor
-$('#input_bar').on('input', function() {
-	//user input
-	var input = $('#input_bar')[0].value;
-	
-	//each course entry in the table is contained within a div.moreInfoWrapper
-	//so filter all of these into two seperate lists, one list contains the user input, the other does not
-	//put everything into uppercase so that the search is case insensitive
-	var matches = $('div.moreInfoWrapper').filter(function(){
-		return $(this).text().toUpperCase().indexOf(input.toUpperCase()) >= 0;
-	});
-	
-	var notMatches = $('div.moreInfoWrapper').filter(function(){
-		return $(this).text().toUpperCase().indexOf(input.toUpperCase()) < 0;
-	});
-	
-	//simply hide all of the courses that do not contain the user input and show the ones that do
-	notMatches.hide();
-	matches.show();
-	
-});
 
 /*	
 	Dynamic breadcrumb numbering system. This is necessary to maintain continuous numbering, because when breadcrumb ol 
@@ -143,12 +185,21 @@ window.onresize=function(){
 function growWindow(){
 	var nav = document.getElementById('nav-grad');
 	$('#content-section').before(nav);
+	
+	//when we are growing the window, side nav is repositioned back to the side
+	//in order to properly view the side nav sliding animation, we will remove the href'same
+	$('a.outer-grad-link').removeAttr('href');
+	$('a.nav-link-grad').removeAttr('href');
 }
 
 //shrinkWindow() handles the repositioning of the sidenav to the bottom (for mobile devices and when the window gets too small)
 function shrinkWindow(){
 	var nav = document.getElementById('nav-grad');
 	$('#info-footer').before(nav);
-
+	
+	//whenever we navigate in mobile view (when side nav is at the bottom of the page), no page reload means that the view is shifted because
+	//new elements being inserted into the page.  We will therefore anchor to the top of the page for a better user experience.
+	$('a.outer-grad-link').attr('href', '#');
+	$('a.nav-link-grad').attr('href', '#');
 
 }

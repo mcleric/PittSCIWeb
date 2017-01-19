@@ -101,10 +101,7 @@
 
 			<!-- BREADCRUMBS-->			
 			<div id="breadcrumb-container">
-				<ol class="breadcrumb">
-					<a href="index.html"><span></span>CS Home</a>
-					<a href="grad.html" class="active"><span></span>Graduate</a>
-				</ol>
+				
 			</div>
 			
 			<hr class="featurette-divider">
@@ -121,11 +118,21 @@
 			<div id="nav-grad">
 				<ul id="outer-nav" class="nav nav-pills nav-stacked">
 				  <li>
-					<a class="nav-link outer-grad-link active" href="grad.html">Graduate</a>
+					<a class="home nav-link outer-grad-link active" onclick="load_page('home');">Graduate</a>
 				  </li>
 				  <li>
-					<a class="nav-link outer-grad-link" href="grad_admiss.html">Admissions</a>
+					<a class="admiss nav-link outer-grad-link" onclick="load_page('admiss');">Admissions</a>
 				  </li>
+				  <ul id="inner-nav" class="nav nav-pills nav-stacked">
+					<li class="inner-item prime_admiss"><a class="nav-link nav-link-grad">Apply Now</a></li>
+					<li class="inner-item prime_admiss prime_programs"><a class="programs nav-link nav-link-grad" onclick="load_page('programs');">Degree & Program Options</a></li>
+					<li class="inner-item prime_programs"><a class="nav-link nav-link-grad">PhD Program</a></li>
+					<li class="inner-item prime_programs"><a class="nav-link nav-link-grad">MS Program</a></li>
+					<li class="inner-item prime_programs"><a class="nav-link nav-link-grad">Dual MS Degree</a></li>
+					<li class="inner-item prime_programs"><a class="nav-link nav-link-grad">BS+MS Degree</a></li>
+					<li class="inner-item prime_admiss"><a class="nav-link nav-link-grad">Application Deadlines</a></li>
+					<li class="inner-item prime_admiss"><a class="nav-link nav-link-grad">Application Requirements</a></li>
+				  </ul>
 				  <li>
 					<a class="nav-link outer-grad-link" href="#">Academics</a>
 				  </li>
@@ -135,23 +142,6 @@
 			
 			<!--PAGE CONTENT-->
 			<div id='content-section'>
-				<h1 class="grad-heading">Graduate Program</h1>
-				
-				<div  id="content-img"><img src="img/students1.jpg"></div>
-				<p id="first-p">
-					The faculty of the Department of Computer Science are committed to high quality graduate education. 
-					The broad scope of their research enables them to convey to graduate students a comprehensive, 
-					state-of-the-art understanding of computer science and its application to a wide range of other disciplines. 
-					A substantial level of sponsored research has been achieved thereby providing financial support for many graduate students 
-					in the form of research assistantships.
-				</p>
-				<p id="content-pfix">
-					Our graduate students come from all corners of the globe and are able to pursue research topics in most areas within 
-					computer science and in many application areas within other disciplines. They are able to take advantage of the diverse 
-					faculty research collaborations with other departments and programs within the University such as the Learning Research 
-					and Development Center, the Intelligent Systems Program, the Telecommunications Program of the School of Information Sciences, 
-					the School of Engineering, and the School of Medicine.
-				</p>
 				
 			</div>
 		</div>
@@ -160,9 +150,7 @@
 		<div id="info-footer">
 				<img id="info-img" src="img/Panthers_Logo.svg">
 				<div id="info-dialog">
-					<h2><b>Stay in Touch with Graduate Faculty</b></h2>
-					<p>Mentors & Advisors are here to lend a helping hand to our CS Graduate Students</p>
-					<button>Faculty Contacts</button>
+				
 				</div>
 				
 		</div>
@@ -295,7 +283,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/data.json"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/grad.js"></script>
   </body>
 
