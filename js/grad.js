@@ -32,7 +32,6 @@ $(document).ready(function(){
 */
 	load_page('home');
 	
-	
 	//if window drops below 992px, need to move side nav to bottom of page
 	if(window.innerWidth <= 992){
 			shrinkWindow();
@@ -153,33 +152,49 @@ function adjCrumbs(list){
 	
 }
 
+//going to use throttling to try and help with the performance of on resize, because this on resize seems like the most straight forward
+//approach to handling breadcrumb issue 
+var resizeTimer;
+
 //function that handles the reorganization of breadcrumbs whenever the page is resized by the user
-window.onresize=function(){
-	//grab a list all ol.breadcrumbs
-	var lists = $('ol.breadcrumb');
+function resizeFnc(){
+	//only fix breadcrumbs if they need fixed
+	if(($('ol.breadcrumb').height() > ($('ol.breadcrumb a').height() + 1)) || $('ol.breadcrumb').length > 1){
 	
-	//the following code starts by grabbing all of the <a>'s in the first ol.breadcrumb
-	//it then loops through the remaining ol.breadcrumbs and appends their <a>'s to the same list.
-	var new_list = $(lists[0]);
-	var items;
-	for(i=1; i < lists.length; i++){
-		items = $(lists[i]).children();
-		$(new_list).append(items);
-		$(lists[i]).remove();
-	
+		//grab a list all ol.breadcrumbs
+		var lists = $('ol.breadcrumb');
+
+		//the following code starts by grabbing all of the <a>'s in the first ol.breadcrumb
+		//it then loops through the remaining ol.breadcrumbs and appends their <a>'s to the same list.
+		var new_list = $(lists[0]);
+		var items;
+		for(i=1; i < lists.length; i++){
+			items = $(lists[i]).children();
+			$(new_list).append(items);
+			$(lists[i]).remove();
+
+		}
+
+		//once all of the <a>'s are placed into a single list, we call adjCrumbs to organize appropriately
+		adjCrumbs(new_list);
+
 	}
-	
-	//once all of the <a>'s are placed into a single list, we call adjCrumbs to organize appropriately
-	adjCrumbs(new_list);
 	
 	if(window.innerWidth <= 992){
 		shrinkWindow();
 	}else{
 		growWindow();
-	
+
 	}
-	
-};
+}
+
+
+$(window).resize(function(){
+	clearTimeout(resizeTimer);
+	resizeTimer = setTimeout(resizeFnc, 500);
+
+});
+
 
 //growWindow() handles the repositioning of the sidenav from the bottom, back to the side
 function growWindow(){
